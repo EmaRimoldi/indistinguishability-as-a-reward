@@ -1,0 +1,85 @@
+{
+  "arms": {
+    "a0": "reuse the exact Step 5 frozen-model validation artifact",
+    "grpo_identity": "reuse the exact selected-domain Step 5 identity-GRPO training and validation artifacts",
+    "grpo_oracle": "deterministic evaluator utility in [0,1], evaluator-only fields never enter the actor prompt",
+    "grpo_quality": "DeepSeek sees task and candidate without any reference and judges correctness; apply the Step 4 selected transform to q",
+    "prompt_imitation": "reuse the exact Step 5 prompt-imitation validation artifact",
+    "sft_teacher": "one pinned greedy DeepSeek V4 Flash answer for each of the same 1000 unique training prompts; train independently from A0"
+  },
+  "checkpoint_selection": "maximum global step after the fixed training budget; no early stopping, validation model selection, or intermediate checkpoint comparison",
+  "data": {
+    "official_test_accessed": false,
+    "training": "frozen train_core1000 IDs from Step 1",
+    "validation": "frozen validation300 IDs from Step 1"
+  },
+  "domains": "exactly the two domains frozen by Step 6; CommonsenseQA is mandatory",
+  "dpo": "EXCLUDED",
+  "exposure_reporting": [
+    "unique prompts",
+    "rollouts",
+    "generated sequences",
+    "tokens",
+    "successful judge calls",
+    "retried judge calls"
+  ],
+  "grpo": {
+    "archival_checkpoints": [
+      0,
+      500,
+      1000,
+      1500,
+      2000
+    ],
+    "beta": 0.003,
+    "effective_batch_size": 4,
+    "epochs": 2,
+    "evaluation_checkpoint": 2000,
+    "generations_per_prompt": 4,
+    "learning_rate": 3e-05,
+    "logical_rewards_per_domain_arm": 8000,
+    "loss": "DR-GRPO",
+    "reward_scaling": "group",
+    "seed": 23,
+    "start": "same frozen A0 for every trainable arm; no SFT warm start",
+    "temperature": 0.6,
+    "top_p": 1.0,
+    "unique_prompts": 1000
+  },
+  "ifbench": "DEFERRED",
+  "mbpp": "FORBIDDEN",
+  "protocol": "campaign-selected-domain-baseline-suite-v1",
+  "quality_prompt": {
+    "forbids": [
+      "reference answer",
+      "authorship judgment",
+      "style judgment"
+    ],
+    "output": "one binary label",
+    "version": "campaign-direct-quality-v1-no-reference-no-system"
+  },
+  "schema_version": 2,
+  "selection_source": "/orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/06_two_domain_selection/results/two_domain_selection_v1.json",
+  "sft": {
+    "actor": "Qwen/Qwen2.5-1.5B-Instruct@989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+    "archival_checkpoints": [
+      0,
+      125,
+      250,
+      375,
+      500
+    ],
+    "effective_batch_size": 4,
+    "epochs": 2,
+    "evaluation_checkpoint": 500,
+    "gradient_checkpointing": true,
+    "learning_rate": 0.0001,
+    "lora_alpha": 32,
+    "lora_dropout": 0.05,
+    "lora_r": 32,
+    "scheduler": "constant",
+    "seed": 23,
+    "unique_prompts": 1000,
+    "warmup_ratio": 0.0
+  }
+}

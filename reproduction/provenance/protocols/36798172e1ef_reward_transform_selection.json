@@ -1,0 +1,11 @@
+{
+  "official_test_accessed": false,
+  "reward_transform_order": [
+    "log_p_own",
+    "p_own",
+    "logit_p_own",
+    "binary_own"
+  ],
+  "selected_reward_transform": "log_p_own",
+  "selection_rule": "maximize equal-domain mean validation task-utility gain; select the earliest checkpoint on within-arm ties and the preregistered transform order on macro ties"
+}

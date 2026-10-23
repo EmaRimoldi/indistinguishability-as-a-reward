@@ -1,0 +1,74 @@
+[
+  {
+    "domain": "commonsenseqa",
+    "kind": "corpus",
+    "path": "/orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/tier1_baseline_suite/domains/commonsenseqa/sft_teacher/runs/teacher_attempt001/sft_all.jsonl",
+    "size": 984828,
+    "sha256": "9544257fb9f8488ea79dc45a41a7dbbd91e6103532881a231c8fa73826f38566",
+    "local": "data/teacher_corpus/commonsenseqa.jsonl",
+    "original_sha256": "df9fa4311cd7f2f8e7704aa9654e1db47f2e5cc187e46100aad4138a7424f546",
+    "transformation": "Removed teacher_correct/teacher_valid evaluation labels; training messages unchanged."
+  },
+  {
+    "domain": "commonsenseqa",
+    "kind": "trainer_arguments",
+    "path": "/orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/tier1_baseline_suite/domains/commonsenseqa/sft_teacher/sft_runs/attempt002/parameters/trainer_arguments.json",
+    "size": 5097,
+    "sha256": "020c7131788b8cb6f11fd068f97ff17d2bd68cd77be9b27116c7dddc7c6a4567",
+    "local": "reproduction/provenance/sft/commonsenseqa/trainer_arguments.json"
+  },
+  {
+    "domain": "gsm8k",
+    "kind": "corpus",
+    "path": "/orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/tier1_baseline_suite/domains/gsm8k/sft_teacher/runs/teacher_attempt001/sft_all.jsonl",
+    "size": 1016851,
+    "sha256": "4b6b9793efc89aef384f80f028c94a82ba3fee90758669ba1e4a4c7eba58ee3f",
+    "local": "data/teacher_corpus/gsm8k.jsonl",
+    "original_sha256": "3b91f1e7acd8deb34e2e9c599a03e2500437a150801be0633646088497be8dd8",
+    "transformation": "Removed teacher_correct/teacher_valid evaluation labels; training messages unchanged."
+  },
+  {
+    "domain": "gsm8k",
+    "kind": "trainer_arguments",
+    "path": "/orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/tier1_baseline_suite/domains/gsm8k/sft_teacher/sft_runs/attempt002/parameters/trainer_arguments.json",
+    "size": 5073,
+    "sha256": "c848daead42c7e079d40bb44a466a6e51a11f73350908f24e815dd846767f950",
+    "local": "reproduction/provenance/sft/gsm8k/trainer_arguments.json"
+  },
+  {
+    "domain": "kodcode",
+    "kind": "corpus",
+    "path": "/orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/tier1_four_domain_baseline_extension/domains/kodcode/sft_teacher/runs/teacher_attempt001/sft_all.jsonl",
+    "size": 2027691,
+    "sha256": "fe0ad207b4616a7d6aa76796bc20104c347314efaa06a4cd2bfb13d8a7ec7813",
+    "local": "data/teacher_corpus/kodcode.jsonl",
+    "original_sha256": "b9e9d5761325ca9a0ff661d2668bf727e243e650959fc6e3502b60002d12da5f",
+    "transformation": "Removed teacher_correct/teacher_valid evaluation labels; training messages unchanged."
+  },
+  {
+    "domain": "kodcode",
+    "kind": "trainer_arguments",
+    "path": "/orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/tier1_four_domain_baseline_extension/domains/kodcode/sft_teacher/sft_runs/attempt001/parameters/trainer_arguments.json",
+    "size": 5112,
+    "sha256": "1d3263e29877e64fba2247a3c4b93a6b8398c36b4c09a58ad7c57884a200d490",
+    "local": "reproduction/provenance/sft/kodcode/trainer_arguments.json"
+  },
+  {
+    "domain": "spider",
+    "kind": "corpus",
+    "path": "/orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/tier1_four_domain_baseline_extension/domains/spider/sft_teacher/runs/teacher_attempt001/sft_all.jsonl",
+    "size": 1507518,
+    "sha256": "53e81efa7d820afde1dfec442f0d4b2ea4df3884c4dce892253c73590b049284",
+    "local": "data/teacher_corpus/spider.jsonl",
+    "original_sha256": "96b213f27397d7b9c5de75d3cfd149c19fb1223f3ae1ee9d39202ecbff1175a2",
+    "transformation": "Removed teacher_correct/teacher_valid evaluation labels; training messages unchanged."
+  },
+  {
+    "domain": "spider",
+    "kind": "trainer_arguments",
+    "path": "/orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/tier1_four_domain_baseline_extension/domains/spider/sft_teacher/sft_runs/attempt001/parameters/trainer_arguments.json",
+    "size": 5109,
+    "sha256": "27f8eb9b05184752ed681d20eb004f1018af386698de2d04befb858c2ec865fb",
+    "local": "reproduction/provenance/sft/spider/trainer_arguments.json"
+  }
+]

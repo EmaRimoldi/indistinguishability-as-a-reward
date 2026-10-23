@@ -1,0 +1,44 @@
+project:
+  root: /home/erimoldi/projects/indistinguishability-as-a-reward
+  seed: 23
+
+paths:
+  split_dir: data/commonsenseqa/cose_v1_11_seed23
+  openrouter_env: models/openrouter/.env
+  experiments: experiments/infrastructure/token_logprob_consistency_v1
+
+model_id: deepseek/deepseek-v4-flash
+providers:
+  - DigitalOcean
+  - StreamLake
+  - DeepInfra
+  - CoreWeave
+  - Parasail
+  - Mancer 2
+  - Cloudflare
+
+sample:
+  b_own: 5
+  qwen_plain: 5
+  repeated_b_own: 1
+  repeated_qwen_plain: 1
+  repetitions: 10
+
+grid:
+  temperatures: [0.0, 0.2]
+  top_ps: [1.0, 0.95]
+  system_prompt_present: [false, true]
+
+request:
+  max_tokens: 1
+  top_logprobs: 5
+  max_attempts: 4
+  max_retry_wait_seconds: 60
+  inter_request_delay_seconds: 0.25
+  request_overrides:
+    reasoning:
+      enabled: false
+
+system_prompt: >-
+  Follow the user's source-attribution instructions exactly. Return exactly one token,
+  either 0 or 1, and no other text.

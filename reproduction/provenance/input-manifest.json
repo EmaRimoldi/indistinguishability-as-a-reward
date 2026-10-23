@@ -1,0 +1,272 @@
+[
+  {
+    "reference": "/path/to/runs/tier3_reward_transform_selection/results/reward_transform_selection.json",
+    "remote_path": "/orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/tier3_reward_transform_selection/results/reward_transform_selection.json",
+    "relative": "36798172e1ef_reward_transform_selection.json",
+    "sha256": "36798172e1efd9e5c17e5471022e62d51d35b74266b2ef83d5b2c0557bc84242",
+    "original_relative": "tier3_reward_transform_selection/results/reward_transform_selection.json",
+    "original_sha256": "d09d4c27ff6d6356c98e9a044f96f286002b9c8c93054f5276bc5efc9aa25354",
+    "representation": "settings-only extract; experimental measurements excluded"
+  },
+  {
+    "reference": "/path/to/runs/evaluation_audits_and_reproducibility/03_judge_sanity/results/judge_sanity_cqa_confirm_gate_v4.json",
+    "remote_path": "/orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/evaluation_audits_and_reproducibility/03_judge_sanity/results/judge_sanity_cqa_confirm_gate_v4.json",
+    "relative": "d8fd2cdbcd68_judge_sanity_cqa_confirm_gate_v4.json",
+    "sha256": "d8fd2cdbcd68b5a8d1dc090d9f00abb58d7af874bbe4b4b24509a14e4f739b6a",
+    "original_relative": "evaluation_audits_and_reproducibility/03_judge_sanity/results/judge_sanity_cqa_confirm_gate_v4.json",
+    "original_sha256": "24d376f6864e9e382b8314e468033bab6028e8b8dbf015e96289ef42a223890c",
+    "representation": "settings-only extract; experimental measurements excluded"
+  },
+  {
+    "reference": "/path/to/runs/tier1_four_domain_screen_1p5b/results/validation_baseline_registry_v1.json",
+    "remote_path": "/orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/tier1_four_domain_screen_1p5b/results/validation_baseline_registry_v1.json",
+    "relative": "e5ea119159d3_validation_baseline_registry_v1.json",
+    "sha256": "e5ea119159d3357e835e9d53d145f3d40f7fb61da3e2f87d4a23fc37a2037de3",
+    "original_relative": "tier1_four_domain_screen_1p5b/results/validation_baseline_registry_v1.json",
+    "original_sha256": "28aebc2741ec6b764de66a174f6b2d422b2607a04ee59d457216e83cf9254aa2",
+    "representation": "settings-only extract; experimental measurements excluded"
+  },
+  {
+    "reference": "/path/to/runs/tier3_reward_transform_selection/results/kodcode_validation300_scoring_protocol_v1.json",
+    "remote_path": "/orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/tier3_reward_transform_selection/results/kodcode_validation300_scoring_protocol_v1.json",
+    "relative": "f594e0419e64_kodcode_validation300_scoring_protocol_v1.json",
+    "sha256": "f594e0419e640dbc10a20aee52a4e2dc70ddb058255ef59fa9c00c093d4cf519",
+    "original_relative": "tier3_reward_transform_selection/results/kodcode_validation300_scoring_protocol_v1.json",
+    "original_sha256": "32d14f51eaec06be00e0bfefb8d4f960dd90e6f768872393e53bbb62c22ac7f5",
+    "representation": "settings-only extract; experimental measurements excluded"
+  },
+  {
+    "reference": "/path/to/runs/evaluation_audits_and_reproducibility/01_data_protocol_runtime_gates/datasets/spider/frozen_seed23_v1/split_manifest.json",
+    "remote_path": "/orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/evaluation_audits_and_reproducibility/01_data_protocol_runtime_gates/datasets/spider/frozen_seed23_v1/split_manifest.json",
+    "relative": "7ace268414e5_split_manifest.json",
+    "sha256": "7ace268414e5af0ef256cf346a07820b260f6e830de51c944f95b7922b1d84ef",
+    "original_relative": "evaluation_audits_and_reproducibility/01_data_protocol_runtime_gates/datasets/spider/frozen_seed23_v1/split_manifest.json",
+    "original_sha256": "7ace268414e5af0ef256cf346a07820b260f6e830de51c944f95b7922b1d84ef",
+    "representation": "settings-only extract; experimental measurements excluded"
+  },
+  {
+    "reference": "/path/to/runs/tier1_four_domain_screen_1p5b/results/spider_validation300_reference_gate_attempt001.json",
+    "remote_path": "/orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/tier1_four_domain_screen_1p5b/results/spider_validation300_reference_gate_attempt001.json",
+    "relative": "64f707ca476d_spider_validation300_reference_gate_attempt001.json",
+    "sha256": "64f707ca476d673e886f93b3500c3afac47ef6c3b18a875a5e795d1c418ef56c",
+    "original_relative": "tier1_four_domain_screen_1p5b/results/spider_validation300_reference_gate_attempt001.json",
+    "original_sha256": "2d74159a957a0e101780df1742bdf45796dfe3ffba29adf97c7c9c75b0476dec",
+    "representation": "settings-only extract; experimental measurements excluded"
+  },
+  {
+    "reference": "/path/to/runs/tier1_four_domain_baseline_extension/configs/four_domain_baseline_extension_selection_v1.json",
+    "remote_path": "/orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/tier1_four_domain_baseline_extension/configs/four_domain_baseline_extension_selection_v1.json",
+    "relative": "74507fcd2ab2_four_domain_baseline_extension_selection_v1.json",
+    "sha256": "74507fcd2ab21130bf0298ba0ed6bdc09d44d737ebeb3d38088c3ec843591e72",
+    "original_relative": "tier1_four_domain_baseline_extension/configs/four_domain_baseline_extension_selection_v1.json",
+    "original_sha256": "74507fcd2ab21130bf0298ba0ed6bdc09d44d737ebeb3d38088c3ec843591e72",
+    "representation": "settings-only extract; experimental measurements excluded"
+  },
+  {
+    "reference": "/path/to/runs/tier1_four_domain_baseline_extension/configs/baseline_suite_protocol_v2.json",
+    "remote_path": "/orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/tier1_four_domain_baseline_extension/configs/baseline_suite_protocol_v2.json",
+    "relative": "18bf6c5a4c14_baseline_suite_protocol_v2.json",
+    "sha256": "18bf6c5a4c1463e16e17796d5c53fcffb8b745386de8396bde09ef10039ff7e1",
+    "original_relative": "tier1_four_domain_baseline_extension/configs/baseline_suite_protocol_v2.json",
+    "original_sha256": "217c5cd5fe345a937ca2f63c6a1e569230651bf9cc9e25bf7f97f8330f09079e",
+    "representation": "settings-only extract; experimental measurements excluded"
+  },
+  {
+    "reference": "/path/to/runs/evaluation_audits_and_reproducibility/06_two_domain_selection/results/two_domain_selection_v1.json",
+    "remote_path": "/orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/evaluation_audits_and_reproducibility/06_two_domain_selection/results/two_domain_selection_v1.json",
+    "relative": "f1a3257bc483_two_domain_selection_v1.json",
+    "sha256": "f1a3257bc483c852fad7da38ccb2f66b24b715678e9504cdf1378771062b7f84",
+    "original_relative": "evaluation_audits_and_reproducibility/06_two_domain_selection/results/two_domain_selection_v1.json",
+    "original_sha256": "42ecf9bcc8a1257b13b0a781630fce34fb5b2aebf3e90a941d9000e4e0e24ef0",
+    "representation": "settings-only extract; experimental measurements excluded"
+  },
+  {
+    "reference": "/path/to/runs/tier1_baseline_suite/configs/baseline_suite_protocol_v2.json",
+    "remote_path": "/orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/tier1_baseline_suite/configs/baseline_suite_protocol_v2.json",
+    "relative": "0a935b18182a_baseline_suite_protocol_v2.json",
+    "sha256": "0a935b18182a8cb1f27316cb3b0807bc4e072dde1924cbc8fee10643c7d160f4",
+    "original_relative": "tier1_baseline_suite/configs/baseline_suite_protocol_v2.json",
+    "original_sha256": "0af375a69914ada24dde5a2ff0811518213077148179a22de3397d27badf30a6",
+    "representation": "settings-only extract; experimental measurements excluded"
+  },
+  {
+    "reference": "/path/to/runs/12_final_test_analysis_reconciliation/manifests/final_condition_registry_attempt001.json",
+    "remote_path": "/orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/evaluation_audits_and_reproducibility/12_final_test_analysis_reconciliation/manifests/final_condition_registry_attempt001.json",
+    "relative": "482f1333dfea_final_condition_registry_attempt001.json",
+    "sha256": "482f1333dfeabdf0a12e1b0d539b94094f51fd145304d2f21dd3aaebd2568554",
+    "original_relative": "12_final_test_analysis_reconciliation/manifests/final_condition_registry_attempt001.json",
+    "original_sha256": "35a8910b4d117950af49d73ce42df594ccdf2c210420d5ac5f421c5f6a6218d8",
+    "representation": "settings-only extract; experimental measurements excluded"
+  },
+  {
+    "reference": "/path/to/runs/17_gpt5mini_k10_multidomain/gsm8k/configs/protocol_v1.json",
+    "remote_path": "/orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/17_gpt5mini_k10_multidomain/gsm8k/configs/protocol_v1.json",
+    "relative": "62d5444bcede_protocol_v1.json",
+    "sha256": "62d5444bcede6437ff57d71fc2d690dfd165207ef6b12f5750e225d0a69d8699",
+    "original_relative": "17_gpt5mini_k10_multidomain/gsm8k/configs/protocol_v1.json",
+    "original_sha256": "2374c5e730bf12ca39de88839e73e67d317efe75de5dfc2c658004e4406b500b",
+    "representation": "settings-only extract; experimental measurements excluded"
+  },
+  {
+    "reference": "/path/to/runs/16_kodcode_gpt5mini_k10/configs/gpt5mini_k10_protocol_v1.json",
+    "remote_path": "/orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/16_kodcode_gpt5mini_k10/configs/gpt5mini_k10_protocol_v1.json",
+    "relative": "c71127a43646_gpt5mini_k10_protocol_v1.json",
+    "sha256": "c71127a43646422d289e95bc13903b52d5e91ffb56ab45553aacae75b4ef5d8a",
+    "original_relative": "16_kodcode_gpt5mini_k10/configs/gpt5mini_k10_protocol_v1.json",
+    "original_sha256": "ac0bb53d9b8d24b70006d3b95cd09ff22cfbebc977d1da74e535b3ff686c8f34",
+    "representation": "settings-only extract; experimental measurements excluded"
+  },
+  {
+    "reference": "/path/to/runs/17_gpt5mini_k10_multidomain/spider/configs/protocol_v1.json",
+    "remote_path": "/orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/17_gpt5mini_k10_multidomain/spider/configs/protocol_v1.json",
+    "relative": "5d145f697349_protocol_v1.json",
+    "sha256": "5d145f6973490cbcb73105a7a7e7fa78be8b8ac880e3302f7229f890849e3e22",
+    "original_relative": "17_gpt5mini_k10_multidomain/spider/configs/protocol_v1.json",
+    "original_sha256": "87af4f730bdebec2c695438ef6f8fb3940b72133b8aa87b6bbcb95e61594d8c7",
+    "representation": "settings-only extract; experimental measurements excluded"
+  },
+  {
+    "reference": "/path/to/runs/17_gpt5mini_k10_multidomain/commonsenseqa/configs/protocol_v1.json",
+    "remote_path": "/orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/17_gpt5mini_k10_multidomain/commonsenseqa/configs/protocol_v1.json",
+    "relative": "c23ff562c286_protocol_v1.json",
+    "sha256": "c23ff562c286e37a46ba7da9d63e2065e7f3d153dee8ae7dcdea44c0ba9bffb7",
+    "original_relative": "17_gpt5mini_k10_multidomain/commonsenseqa/configs/protocol_v1.json",
+    "original_sha256": "2d3d18130c77464edc673e356949a9d23334b6426ec706b06c04cad8ba06c50e",
+    "representation": "settings-only extract; experimental measurements excluded"
+  },
+  {
+    "reference": "/path/to/runs/17_gpt5mini_k10_multidomain/gsm8k/configs/protocol_v2.json",
+    "remote_path": "/orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/17_gpt5mini_k10_multidomain/gsm8k/configs/protocol_v2.json",
+    "relative": "93afcbbdff35_protocol_v2.json",
+    "sha256": "93afcbbdff35bddbbc3e9626c0323a4329fd223c4597769ada1669da01634974",
+    "original_relative": "17_gpt5mini_k10_multidomain/gsm8k/configs/protocol_v2.json",
+    "original_sha256": "cef87d02c697f52cd9596cff98b6baaa36ce117650f68a3e97d0b075716f9404",
+    "representation": "settings-only extract; experimental measurements excluded"
+  },
+  {
+    "reference": "/path/to/runs/05_four_domain_screen_1p5b/results/validation_baseline_registry_v1.json",
+    "remote_path": "/orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/tier1_four_domain_screen_1p5b/results/validation_baseline_registry_v1.json",
+    "relative": "e5ea119159d3_validation_baseline_registry_v1.json",
+    "sha256": "e5ea119159d3357e835e9d53d145f3d40f7fb61da3e2f87d4a23fc37a2037de3",
+    "original_relative": "05_four_domain_screen_1p5b/results/validation_baseline_registry_v1.json",
+    "original_sha256": "28aebc2741ec6b764de66a174f6b2d422b2607a04ee59d457216e83cf9254aa2",
+    "representation": "settings-only extract; experimental measurements excluded"
+  },
+  {
+    "reference": "/path/to/runs/17_gpt5mini_k10_multidomain/commonsenseqa/configs/protocol_v2.json",
+    "remote_path": "/orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/17_gpt5mini_k10_multidomain/commonsenseqa/configs/protocol_v2.json",
+    "relative": "200f1ad7d682_protocol_v2.json",
+    "sha256": "200f1ad7d682ed329911f52ab48f4114cb8d3b7db7e9e4f9d25bde2f6dce72c5",
+    "original_relative": "17_gpt5mini_k10_multidomain/commonsenseqa/configs/protocol_v2.json",
+    "original_sha256": "a4211917967d0d67e3b375992653392ca07cfafc59dfd2e359b8a318786b91c2",
+    "representation": "settings-only extract; experimental measurements excluded"
+  },
+  {
+    "reference": "/path/to/runs/16_kodcode_gpt5mini_k10/configs/gpt5mini_k10_protocol_v2.json",
+    "remote_path": "/orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/16_kodcode_gpt5mini_k10/configs/gpt5mini_k10_protocol_v2.json",
+    "relative": "8a01f04d1c3e_gpt5mini_k10_protocol_v2.json",
+    "sha256": "8a01f04d1c3eb9c795d5f1f30fc35f66e135892769dd4109de2afe937a205f05",
+    "original_relative": "16_kodcode_gpt5mini_k10/configs/gpt5mini_k10_protocol_v2.json",
+    "original_sha256": "d37872c8e73d5b3164d4f7aced4889319e802092b9d15d41830c543265c195ea",
+    "representation": "settings-only extract; experimental measurements excluded"
+  },
+  {
+    "reference": "/path/to/runs/17_gpt5mini_k10_multidomain/spider/configs/protocol_v2.json",
+    "remote_path": "/orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/17_gpt5mini_k10_multidomain/spider/configs/protocol_v2.json",
+    "relative": "42741d114633_protocol_v2.json",
+    "sha256": "42741d1146337d647b68638eeca536d185c9427228add83ceb8aae20b020ce59",
+    "original_relative": "17_gpt5mini_k10_multidomain/spider/configs/protocol_v2.json",
+    "original_sha256": "461309347f56e42c11b854f595acb9bafba409ad688072fc6569b89fc987379f",
+    "representation": "settings-only extract; experimental measurements excluded"
+  },
+  {
+    "reference": "/path/to/runs/01_data_protocol_runtime_gates/datasets/spider/frozen_seed23_v1/split_manifest.json",
+    "remote_path": "/orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/evaluation_audits_and_reproducibility/01_data_protocol_runtime_gates/datasets/spider/frozen_seed23_v1/split_manifest.json",
+    "relative": "7ace268414e5_split_manifest.json",
+    "sha256": "7ace268414e5af0ef256cf346a07820b260f6e830de51c944f95b7922b1d84ef",
+    "original_relative": "01_data_protocol_runtime_gates/datasets/spider/frozen_seed23_v1/split_manifest.json",
+    "original_sha256": "7ace268414e5af0ef256cf346a07820b260f6e830de51c944f95b7922b1d84ef",
+    "representation": "settings-only extract; experimental measurements excluded"
+  },
+  {
+    "reference": "/path/to/runs/05_four_domain_screen_1p5b/results/spider_validation300_reference_gate_attempt001.json",
+    "remote_path": "/orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/tier1_four_domain_screen_1p5b/results/spider_validation300_reference_gate_attempt001.json",
+    "relative": "64f707ca476d_spider_validation300_reference_gate_attempt001.json",
+    "sha256": "64f707ca476d673e886f93b3500c3afac47ef6c3b18a875a5e795d1c418ef56c",
+    "original_relative": "05_four_domain_screen_1p5b/results/spider_validation300_reference_gate_attempt001.json",
+    "original_sha256": "2d74159a957a0e101780df1742bdf45796dfe3ffba29adf97c7c9c75b0476dec",
+    "representation": "settings-only extract; experimental measurements excluded"
+  },
+  {
+    "reference": "/path/to/runs/15_four_domain_baseline_extension/configs/baseline_suite_protocol_v2.json",
+    "remote_path": "/orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/tier1_four_domain_baseline_extension/configs/baseline_suite_protocol_v2.json",
+    "relative": "18bf6c5a4c14_baseline_suite_protocol_v2.json",
+    "sha256": "18bf6c5a4c1463e16e17796d5c53fcffb8b745386de8396bde09ef10039ff7e1",
+    "original_relative": "15_four_domain_baseline_extension/configs/baseline_suite_protocol_v2.json",
+    "original_sha256": "217c5cd5fe345a937ca2f63c6a1e569230651bf9cc9e25bf7f97f8330f09079e",
+    "representation": "settings-only extract; experimental measurements excluded"
+  },
+  {
+    "reference": "/path/to/runs/15_four_domain_baseline_extension/configs/four_domain_baseline_extension_selection_v1.json",
+    "remote_path": "/orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/tier1_four_domain_baseline_extension/configs/four_domain_baseline_extension_selection_v1.json",
+    "relative": "74507fcd2ab2_four_domain_baseline_extension_selection_v1.json",
+    "sha256": "74507fcd2ab21130bf0298ba0ed6bdc09d44d737ebeb3d38088c3ec843591e72",
+    "original_relative": "15_four_domain_baseline_extension/configs/four_domain_baseline_extension_selection_v1.json",
+    "original_sha256": "74507fcd2ab21130bf0298ba0ed6bdc09d44d737ebeb3d38088c3ec843591e72",
+    "representation": "settings-only extract; experimental measurements excluded"
+  },
+  {
+    "reference": "/path/to/runs/07_baseline_suite/configs/baseline_suite_protocol_v2.json",
+    "remote_path": "/orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/tier1_baseline_suite/configs/baseline_suite_protocol_v2.json",
+    "relative": "0a935b18182a_baseline_suite_protocol_v2.json",
+    "sha256": "0a935b18182a8cb1f27316cb3b0807bc4e072dde1924cbc8fee10643c7d160f4",
+    "original_relative": "07_baseline_suite/configs/baseline_suite_protocol_v2.json",
+    "original_sha256": "0af375a69914ada24dde5a2ff0811518213077148179a22de3397d27badf30a6",
+    "representation": "settings-only extract; experimental measurements excluded"
+  },
+  {
+    "reference": "/path/to/runs/06_two_domain_selection/results/two_domain_selection_v1.json",
+    "remote_path": "/orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/evaluation_audits_and_reproducibility/06_two_domain_selection/results/two_domain_selection_v1.json",
+    "relative": "f1a3257bc483_two_domain_selection_v1.json",
+    "sha256": "f1a3257bc483c852fad7da38ccb2f66b24b715678e9504cdf1378771062b7f84",
+    "original_relative": "06_two_domain_selection/results/two_domain_selection_v1.json",
+    "original_sha256": "42ecf9bcc8a1257b13b0a781630fce34fb5b2aebf3e90a941d9000e4e0e24ef0",
+    "representation": "settings-only extract; experimental measurements excluded"
+  },
+  {
+    "reference": "/path/to/runs/04_reward_transform_selection/arms/gsm8k/log_p_own/runs/shared_baseline/evaluations/validation/step_0000/summary.json",
+    "remote_path": "/orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/tier3_reward_transform_selection/arms/gsm8k/log_p_own/runs/shared_baseline/evaluations/validation/step_0000/summary.json",
+    "relative": "67fd2c111398_summary.json",
+    "sha256": "67fd2c1113989af03af69daff82d6706b37f792fc949a07d3ab1add5532793ad",
+    "original_relative": "04_reward_transform_selection/arms/gsm8k/log_p_own/runs/shared_baseline/evaluations/validation/step_0000/summary.json",
+    "original_sha256": "1b5935402ab57b4fdf8c672e1113d7fb396c59250bb980bb52fc9ec3689c93a4",
+    "representation": "settings-only extract; experimental measurements excluded"
+  },
+  {
+    "reference": "/path/to/runs/04_reward_transform_selection/arms/kodcode/log_p_own/runs/shared_baseline/evaluations/validation/step_0000/summary.json",
+    "remote_path": "/orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/tier3_reward_transform_selection/arms/kodcode/log_p_own/runs/shared_baseline/evaluations/validation/step_0000/summary.json",
+    "relative": "0a61154fee31_summary.json",
+    "sha256": "0a61154fee31f274ba358e98c117bf0a3c083fb204a9d34b1e168f442c6dbf51",
+    "original_relative": "04_reward_transform_selection/arms/kodcode/log_p_own/runs/shared_baseline/evaluations/validation/step_0000/summary.json",
+    "original_sha256": "333623a8641d6f757f5d00ebb56b451a864f78c5008edb8448965bcb71b224c6",
+    "representation": "settings-only extract; experimental measurements excluded"
+  },
+  {
+    "relative": "46df7b77caed_gpt5mini_k10_train_v3.yaml",
+    "reference": "/path/to/runs/16_kodcode_gpt5mini_k10/configs/gpt5mini_k10_train_v3.yaml",
+    "remote_path": "/orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/16_kodcode_gpt5mini_k10/configs/gpt5mini_k10_train_v3.yaml",
+    "sha256": "46df7b77caed022ff7a53355c0e3eb634ffa036c52cfa7b43b4034cca0219f21",
+    "original_relative": "16_kodcode_gpt5mini_k10/configs/gpt5mini_k10_train_v3.yaml",
+    "original_sha256": "e68fd676a4dfd9e0feb452152d4dd1c80a2999f78d45560388f463ace3250a0d",
+    "representation": "settings-only extract; experimental measurements excluded"
+  },
+  {
+    "relative": "20006bad4a6f_gpt5mini_k10_protocol_v3.json",
+    "reference": "/path/to/runs/16_kodcode_gpt5mini_k10/configs/gpt5mini_k10_protocol_v3.json",
+    "remote_path": "/orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/16_kodcode_gpt5mini_k10/configs/gpt5mini_k10_protocol_v3.json",
+    "sha256": "20006bad4a6f20d7c6ae119dd26224fe477f3f0ad818ac46cec2cd984c5ee1f8",
+    "original_relative": "16_kodcode_gpt5mini_k10/configs/gpt5mini_k10_protocol_v3.json",
+    "original_sha256": "9e60db8b73ea4174e8bb4839360252c8aa253a6bc9641d1cc4e0c40755ac7574",
+    "representation": "settings-only extract; experimental measurements excluded"
+  }
+]

@@ -1,0 +1,6 @@
+{
+  "domain": "gsm8k",
+  "official_test_accessed": false,
+  "validation_file": "/orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/01_data_protocol_runtime_gates/datasets/gsm8k/frozen_historical_seed23/validation.jsonl",
+  "validation_file_sha256": "a259ff19616dd1c39373f8c7268587d8ae441c39d896967bbb5c9d5c127fdd4a"
+}

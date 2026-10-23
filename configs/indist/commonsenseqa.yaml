@@ -1,0 +1,122 @@
+project:
+  root: /path/to/iar_code
+  seed: 42
+campaign:
+  campaign_id: iar-identity-seed42-replication-v1
+  step: 5
+  domain: commonsenseqa
+  reward_selection: /path/to/runs/tier3_reward_transform_selection/results/reward_transform_selection.json
+  reward_selection_sha256: d09d4c27ff6d6356c98e9a044f96f286002b9c8c93054f5276bc5efc9aa25354
+  cqa_confirm_gate: /path/to/runs/evaluation_audits_and_reproducibility/03_judge_sanity/results/judge_sanity_cqa_confirm_gate_v4.json
+  cqa_confirm_gate_sha256: 24d376f6864e9e382b8314e468033bab6028e8b8dbf015e96289ef42a223890c
+  run_policy: immutable attempts; no paid-training auto-requeue
+paths:
+  hf_cache: /path/to/cache/huggingface
+  experiments: /path/to/runs/identity_seed42/domains/commonsenseqa/grpo/runs
+  checkpoints: /path/to/runs/identity_seed42/domains/commonsenseqa/grpo/checkpoints
+dataset:
+  split_file: /path/to/runs/evaluation_audits_and_reproducibility/01_data_protocol_runtime_gates/datasets/commonsenseqa/frozen_historical_seed23/train.jsonl
+  split_file_sha256: bb690c422197c5b0241c09d82e375d6c2bfd6404ab20adfa517d549dea4204c3
+  selection: frozen_train_core1000
+  prompt_count: 1000
+  actor_visible_fields:
+  - question
+  - choices
+  evaluator_only_fields:
+  - answer_key
+trial:
+  run_name: campaign_step5_commonsenseqa_log_p_own_seed42
+  prompt_count: 1000
+  expected_reward_calls: 8000
+actor:
+  model_id: Qwen/Qwen2.5-1.5B-Instruct
+  revision: 989aa7980e4cf806f80c7fef2b1adb7bc71aa306
+  local_files_only: true
+  lora:
+    r: 32
+    alpha: 32
+    dropout: 0.05
+    target_modules:
+    - q_proj
+    - k_proj
+    - v_proj
+    - o_proj
+    - gate_proj
+    - up_proj
+    - down_proj
+discriminator:
+  model_id: deepseek/deepseek-v4-flash
+  target_model_name: DeepSeek V4 Flash
+  attribution_prompt_version: commonsenseqa-pointwise-self-attribution-v2-binary-contract-no-system
+  attribution_prompt_template_sha256: c3fcd0cb546a99d173d6d19a00e6720c1a86a170f73d8a6671bfb073f1b24444
+  expected_provider: StreamLake
+  provider_routing:
+    order:
+    - StreamLake
+    require_parameters: true
+    allow_fallbacks: false
+  request_overrides:
+    reasoning:
+      enabled: false
+  temperature: 0
+  judge_max_tokens: 1
+  top_logprobs: 5
+  strict_logprobs: true
+reward:
+  type: pointwise_self_attribution_logprob
+  value: log_p_own
+  epsilon: 1.0e-06
+  max_reward_calls: 8000
+  max_http_requests: 40000
+  max_attempts_per_call: 5
+  max_concurrency: 1
+  minimum_request_interval_seconds: 1.5
+  timeout_seconds: 120
+  max_retry_wait_seconds: 120
+  store_raw_response: true
+training:
+  algorithm: GRPO
+  world_size: 1
+  num_epochs: 2
+  num_generations: 4
+  generation_batch_size: 8
+  per_device_train_batch_size: 4
+  gradient_accumulation_steps: 1
+  max_steps: 2000
+  max_prompt_tokens: 4096
+  max_completion_length: 768
+  temperature: 0.6
+  top_p: 1.0
+  learning_rate: 3.0e-05
+  warmup_ratio: 0.0
+  lr_scheduler_type: constant
+  gradient_checkpointing: true
+  mask_truncated_completions: true
+  beta: 0.003
+  loss_type: dr_grpo
+  scale_rewards: group
+  num_completions_to_print: 0
+  save_strategy: steps
+  save_steps: 500
+  save_total_limit: null
+evaluation:
+  validation_only: true
+  validation_file: /path/to/runs/evaluation_audits_and_reproducibility/01_data_protocol_runtime_gates/datasets/commonsenseqa/frozen_historical_seed23/validation.jsonl
+  validation_file_sha256: 900434d9f3c322d1d3983af4d6d82883d6dab1001850eb122eb2ce0c5421cee3
+  validation_count: 300
+  checkpoints:
+  - 0
+  - 500
+  - 1000
+  - 1500
+  - 2000
+  baseline_registry: /path/to/runs/tier1_four_domain_screen_1p5b/results/validation_baseline_registry_v1.json
+  baseline_registry_sha256: 28aebc2741ec6b764de66a174f6b2d422b2607a04ee59d457216e83cf9254aa2
+  batch_size: 8
+  max_new_tokens: 768
+  temperature: 0
+  top_p: 1.0
+  coding_timeout_seconds: 60
+  select_on: validation_task_utility
+  tie_break: earliest_checkpoint
+  official_test_accessed: false

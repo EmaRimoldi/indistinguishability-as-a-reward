@@ -1,0 +1,50 @@
+[
+  {
+    "file": "configs/reward_form_pilot/gsm8k_binary_own.yaml",
+    "key": "reward.max_http_requests",
+    "before": 7475,
+    "after": 7480
+  },
+  {
+    "file": "configs/reward_form_pilot/kodcode_binary_own.yaml",
+    "key": "reward.max_http_requests",
+    "before": 7475,
+    "after": 7480
+  },
+  {
+    "file": "configs/reward_form_pilot/gsm8k_p_own.yaml",
+    "key": "reward.max_http_requests",
+    "before": 7475,
+    "after": 7480
+  },
+  {
+    "file": "configs/reward_form_pilot/gsm8k_log_p_own.yaml",
+    "key": "reward.max_http_requests",
+    "before": 7475,
+    "after": 7480
+  },
+  {
+    "file": "configs/reward_form_pilot/kodcode_log_p_own.yaml",
+    "key": "reward.max_http_requests",
+    "before": 7475,
+    "after": 7480
+  },
+  {
+    "file": "configs/reward_form_pilot/kodcode_logit_p_own.yaml",
+    "key": "reward.max_http_requests",
+    "before": 7475,
+    "after": 7480
+  },
+  {
+    "file": "configs/reward_form_pilot/kodcode_p_own.yaml",
+    "key": "reward.max_http_requests",
+    "before": 7475,
+    "after": 7480
+  },
+  {
+    "file": "configs/reward_form_pilot/gsm8k_logit_p_own.yaml",
+    "key": "reward.max_http_requests",
+    "before": 7475,
+    "after": 7480
+  }
+]

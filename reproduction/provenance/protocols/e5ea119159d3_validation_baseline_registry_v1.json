@@ -1,0 +1,7 @@
+{
+  "model_id": "Qwen/Qwen2.5-1.5B-Instruct",
+  "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "official_test_accessed": false,
+  "protocol": "campaign-step5-validation-baseline-registry-v1",
+  "selection_role": "validation_task_utility"
+}

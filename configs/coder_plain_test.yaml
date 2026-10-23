@@ -1,0 +1,61 @@
+project:
+  name: indistinguishability-as-a-reward
+  root: /home/erimoldi/projects/indistinguishability-as-a-reward
+  seed: 17
+
+paths:
+  data_cache: data/cache
+  hf_cache: models/cache/huggingface
+  experiments: experiments/mbpp_coder_control_v1/phase0
+  openrouter_env: models/openrouter/.env
+  model_manifest: models/manifests/models.yaml
+
+dataset:
+  name: google-research-datasets/mbpp
+  config_name: null
+  prompt_style: mbpp_google_original
+  fewshot_split: prompt
+  fewshot_count: 10
+  smoke_split: validation
+  smoke_count: 10
+  full_splits:
+    - test
+
+generator:
+  role: A0
+  model_id: Qwen/Qwen2.5-Coder-1.5B-Instruct
+  local_files_only: true
+  dtype: auto
+  device_map: auto
+  max_new_tokens: 512
+  temperature: 0.2
+  top_p: 0.95
+  variants:
+    - plain
+
+discriminator:
+  role: B
+  provider: openrouter
+  model_id: deepseek/deepseek-v4-flash
+  collect_own_answer: false
+  own_answer_max_tokens: 512
+  judge_max_tokens: 1
+  temperature: 0
+  logprobs: true
+  top_logprobs: 5
+  strict_logprobs: true
+  request_overrides:
+    reasoning:
+      enabled: false
+  provider_routing:
+    require_parameters: true
+    allow_fallbacks: false
+
+unit_tests:
+  enabled: true
+  timeout_seconds: 5
+
+run_modes:
+  coder_plain_test:
+    splits:
+      test: null

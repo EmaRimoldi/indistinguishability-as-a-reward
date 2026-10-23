@@ -1,0 +1,43 @@
+{
+  "campaign_id": "iar-four-domain-20260908-v2",
+  "domain": "commonsenseqa",
+  "domain_selection": "/orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/06_two_domain_selection/results/two_domain_selection_v1.json",
+  "domain_selection_sha256": "42ecf9bcc8a1257b13b0a781630fce34fb5b2aebf3e90a941d9000e4e0e24ef0",
+  "gate_thresholds": {
+    "binary_label_mass_floor": 0.85,
+    "binary_label_mass_target": 0.9,
+    "bootstrap_replicates": 10000,
+    "complete_judge_call_coverage": 800,
+    "complete_logical_pair_coverage": 400,
+    "maximum_absolute_mean_order_effect": 0.1,
+    "maximum_ambiguous_requests": 0,
+    "maximum_mean_actor_probability": 0.95,
+    "minimum_actor_probability_standard_deviation": 0.03,
+    "minimum_emitted_argmax_consistency": 0.98,
+    "minimum_fraction_groups_with_range": 0.2,
+    "minimum_mean_actor_probability": 0.05,
+    "minimum_target_coverage": 0.95,
+    "minimum_within_group_range": 0.02
+  },
+  "generation_batch_size": 8,
+  "grpo_config": "/orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/09_pairwise_generate_distinguish/domains/commonsenseqa/grpo_pairwise/configs/pairwise_prep003.yaml",
+  "grpo_config_sha256": "f8afa1ff3d4740b7485f8ed2497862260b3120531afb9834589ea9d828172493",
+  "official_test_accessed": false,
+  "output_root": "/orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/09_pairwise_generate_distinguish/domains/commonsenseqa/probe",
+  "pairwise_protocol": "/orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/09_pairwise_generate_distinguish/configs/pairwise_protocol_v3_final_checkpoint_nested_probe.json",
+  "pairwise_protocol_sha256": "3f3a61c5ed2d41f0a799635fceb554ac7c6975d45394ae0801c51ebb24fbfa69",
+  "probe_held_out": false,
+  "probe_sampling_method": "prefix100_of_seed23_frozen_train_core1000",
+  "probe_split": "/orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/09_pairwise_generate_distinguish/domains/commonsenseqa/probe/artifacts/train_core_prefix100_seed23_prep003.jsonl",
+  "probe_split_sha256": "29eeffca526bddffc7d201099d981b0bd6e9f846199227362e694831cf437b85",
+  "protocol": "campaign-pairwise-probe100-v1",
+  "schema_version": 1,
+  "step": 9,
+  "teacher_summary": "/orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/07_baseline_suite/domains/commonsenseqa/sft_teacher/runs/teacher_attempt001/summary.json",
+  "transport": {
+    "max_attempts_per_call": 5,
+    "max_retry_wait_seconds": 120,
+    "minimum_request_interval_seconds": 1.0,
+    "timeout_seconds": 120
+  }
+}

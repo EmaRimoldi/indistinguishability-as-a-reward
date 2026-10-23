@@ -1,0 +1,65 @@
+{
+  "official_test_accessed": true,
+  "protocol": "/orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/12_final_test_analysis_reconciliation/configs/final_test_protocol_v2_terminal_only.json",
+  "selected_domains": [
+    "commonsenseqa",
+    "gsm8k"
+  ],
+  "split_freeze": "/orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/12_final_test_analysis_reconciliation/sealed_inputs/freeze_attempt001/split_freeze.json",
+  "split_freeze_sha256": "03a727ee39e539363421f7ef9078b8f338511a0d55176a2881e6fae9df28f650",
+  "test_inputs": {
+    "commonsenseqa": {
+      "n": 1221,
+      "path": "/orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/01_data_protocol_runtime_gates/datasets/commonsenseqa/frozen_historical_seed23/test.jsonl",
+      "sha256": "264b7f586029b825586042bb2f0898fb3274af37a6896ac181cff34dd5b0f17a",
+      "source_manifest": "/orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/01_data_protocol_runtime_gates/datasets/commonsenseqa/frozen_historical_seed23/split_manifest.json",
+      "source_manifest_sha256": "cfacf9072afea42ef36bf0c38dd9158705e82d24885b1e39c27f5142f012b906"
+    },
+    "gsm8k": {
+      "n": 1319,
+      "path": "/orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/01_data_protocol_runtime_gates/datasets/gsm8k/frozen_historical_seed23/test.jsonl",
+      "sha256": "3cce37162d87a71be2f14f9239d5c1c351f0dbdfb1325e6bea87ae5f31434487",
+      "source_manifest": "/orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/01_data_protocol_runtime_gates/datasets/gsm8k/frozen_historical_seed23/split_manifest.json",
+      "source_manifest_sha256": "7a15a79d6f834de200d5d4830f770f297f542af1edc45a58a00fb0fefb776ec3"
+    },
+    "kodcode": {
+      "n": 1000,
+      "path": "/orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/01_data_protocol_runtime_gates/datasets/kodcode/frozen_seed23_v1/sealed/sealed_test1000.jsonl",
+      "sha256": "650733e839623263bac13978e3d24791c941c34bcc6a83af4de89e425d7cb656",
+      "source_manifest": "/orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/01_data_protocol_runtime_gates/datasets/kodcode/frozen_seed23_v1/split_manifest.json",
+      "source_manifest_sha256": "71c32aa9f488dfffb118636b294cd850244b89df50354ab48377dfdd27d996af"
+    },
+    "spider": {
+      "database_root": "/orcd/pool/008/erimoldi/iar/datasets/spider-release-1403EGqz/spider_data/database",
+      "database_sha256": {
+        "battle_death": "12569f4493a9655639c4ea86ba4bd8a4ea6411e1b8ae0e1fdf3d6a995344265d",
+        "car_1": "9d851e396e02997a1de073ae982fe1e4b1769fdffce2fac6e325857a3a938709",
+        "concert_singer": "4fa1ba5ab4577e895271088b1dc44aa94be88e25a54293317a67584112ef059d",
+        "course_teach": "da45fcdde64ac2b9330146506b7653ad4417489d8e496e509045e1b02245d793",
+        "cre_Doc_Template_Mgt": "9c3fdd03d8795ecde60aae782ce50c4fb1d6c03de1401fcdd6dc177342a53df5",
+        "dog_kennels": "ea5fbc6cf6aaf500371c5c121c339d9802ba6f5fbecd948a5274c0b487a9f486",
+        "employee_hire_evaluation": "760fec5cc872ef0cdf99242614f05c93dbd00d422ac9da87ea64fcf555be7373",
+        "flight_2": "db777ba6488ae2b515cb138d71ff23c4533e5fd0355854648a1102faff3fb7af",
+        "museum_visit": "3217aee38d8e3661d374bf025591b7164a1179c568ef5d20f3c338035fc6e1dd",
+        "network_1": "bec92cd9a68d6f23469a0df246429299f44caaf75eab12275784e0bb7d0aa9ca",
+        "orchestra": "13b64af1cf6fcbd34953a44f951b2bf79bedc000b344549212dac1a9345e2f86",
+        "pets_1": "8ffe0ea9b3b034ca8860a2f18300a98c7583ce2522ea195726a04803f675e5bb",
+        "poker_player": "63fffd7b68524f07a742a74b74b95a4ba178e6419f3574b9ee78b8dda1df46ba",
+        "real_estate_properties": "5d0bd83afa93a843e68f892d8430fe625d7ed2508aae00a341926b0b5b478a29",
+        "singer": "5c1b72755d148c294b26d7b479307e8799b93485ac918720f953e2ab84d59a0a",
+        "student_transcripts_tracking": "5a1f4928a1fd36f6edb31c4f054203b2e2fab6b18e5951c4f5633628f82a8e56",
+        "tvshow": "1212c2e75cf1dcf3aeb4055331a85298b073d8a613ead77975b13bd3346b9fc4",
+        "voter_1": "815bf1611b8a32f649d292a6138562f1761a0c10cb256e20f6561199cff31531",
+        "world_1": "17b986695f16786d58d66f85e49dba87bdfe72953207ab9b1b49da9d2301ef65",
+        "wta_1": "8f20747456d7748674b4f05432f3de96446ced95b8bd5a6fd01284f6c28f727c"
+      },
+      "n": 1034,
+      "path": "/orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/12_final_test_analysis_reconciliation/sealed_inputs/freeze_attempt001/spider_official_test1034.jsonl",
+      "sha256": "fc7d81de9b3ce04207a646c62c339cedfa4d75be0aa06689ef3e8c71cece3f66",
+      "source": "/orcd/pool/008/erimoldi/iar/datasets/spider-release-1403EGqz/spider_data/dev.json",
+      "source_sha256": "30d64a3fccde493226df79687aed9e4a1c0129525baf44f29c0573d914d758a4",
+      "tables_json": "/orcd/pool/008/erimoldi/iar/datasets/spider-release-1403EGqz/spider_data/tables.json",
+      "tables_json_sha256": "61bb20aa401f03164e2d7f3b16509b7b5f79cc9c943ca7bd159046df1159e2ed"
+    }
+  }
+}

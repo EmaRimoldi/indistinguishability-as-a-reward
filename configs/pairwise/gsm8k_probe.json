@@ -1,0 +1,43 @@
+{
+  "campaign_id": "iar-four-domain-20260908-v2",
+  "domain": "gsm8k",
+  "domain_selection": "/orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/06_two_domain_selection/results/two_domain_selection_v1.json",
+  "domain_selection_sha256": "42ecf9bcc8a1257b13b0a781630fce34fb5b2aebf3e90a941d9000e4e0e24ef0",
+  "gate_thresholds": {
+    "binary_label_mass_floor": 0.85,
+    "binary_label_mass_target": 0.9,
+    "bootstrap_replicates": 10000,
+    "complete_judge_call_coverage": 800,
+    "complete_logical_pair_coverage": 400,
+    "maximum_absolute_mean_order_effect": 0.1,
+    "maximum_ambiguous_requests": 0,
+    "maximum_mean_actor_probability": 0.95,
+    "minimum_actor_probability_standard_deviation": 0.03,
+    "minimum_emitted_argmax_consistency": 0.98,
+    "minimum_fraction_groups_with_range": 0.2,
+    "minimum_mean_actor_probability": 0.05,
+    "minimum_target_coverage": 0.95,
+    "minimum_within_group_range": 0.02
+  },
+  "generation_batch_size": 8,
+  "grpo_config": "/orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/09_pairwise_generate_distinguish/domains/gsm8k/grpo_pairwise/configs/pairwise_prep003.yaml",
+  "grpo_config_sha256": "188068823c39ce0b4aaf6d1eee7173415fc56e0813f5a038ca545fa029192363",
+  "official_test_accessed": false,
+  "output_root": "/orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/09_pairwise_generate_distinguish/domains/gsm8k/probe",
+  "pairwise_protocol": "/orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/09_pairwise_generate_distinguish/configs/pairwise_protocol_v3_final_checkpoint_nested_probe.json",
+  "pairwise_protocol_sha256": "3f3a61c5ed2d41f0a799635fceb554ac7c6975d45394ae0801c51ebb24fbfa69",
+  "probe_held_out": false,
+  "probe_sampling_method": "prefix100_of_seed23_frozen_train_core1000",
+  "probe_split": "/orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/09_pairwise_generate_distinguish/domains/gsm8k/probe/artifacts/train_core_prefix100_seed23_prep003.jsonl",
+  "probe_split_sha256": "4f6e733bc69ce44dc11e2c18ef22d26a7cadf65076b271ea55fd7197888355fb",
+  "protocol": "campaign-pairwise-probe100-v1",
+  "schema_version": 1,
+  "step": 9,
+  "teacher_summary": "/orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/07_baseline_suite/domains/gsm8k/sft_teacher/runs/teacher_attempt001/summary.json",
+  "transport": {
+    "max_attempts_per_call": 5,
+    "max_retry_wait_seconds": 120,
+    "minimum_request_interval_seconds": 1.0,
+    "timeout_seconds": 120
+  }
+}

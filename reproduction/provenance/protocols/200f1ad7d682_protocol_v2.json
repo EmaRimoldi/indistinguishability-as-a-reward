@@ -1,0 +1,166 @@
+{
+  "amendment": {
+    "change": "up to 8 HTTP attempts per physical call, only for transient failures: HTTP 429 or 5xx, timeouts, transport errors, and 429/5xx error objects inside a 200 body; backoff min(5*2^(attempt-1), 60) s or Retry-After for HTTP 429. Every attempt is logged with its attempt number; an error row is admissible in the resume and completion audits only if it is transient and the same call_id later has a receipt. Non-transient failures remain terminal.",
+    "date": "2026-09-23",
+    "id": "transient-retry-v1",
+    "reason": "GSM8K attempt001 aborted at step ~328: OpenRouter answered one physical call with HTTP 200 carrying an in-body error {code: 429, 'openai/gpt-5-mini is temporarily rate-limited upstream'}; with one HTTP attempt per call the batch, and the run, failed.",
+    "unchanged": "model, OpenAI-only routing with allow_fallbacks=false, flex tier, minimal reasoning, strict one-label JSON schema, K=10, reward log((m+1)/12), one successful receipt per judgment, response-provider and cost checks on every judgment, actor, data, seed, hyperparameters, checkpoint schedule, and held-out policy"
+  },
+  "amendment_history": [
+    {
+      "change": "removed provider_routing.require_parameters",
+      "date": "2026-09-23",
+      "reason": "OpenRouter began rejecting require_parameters=true together with a single-provider pin, returning 404 'No endpoints found that can handle the requested parameters'. The identical request without the flag is served by OpenAI.",
+      "unchanged": "single-provider pin on OpenAI, allow_fallbacks=false, flex tier, reasoning effort minimal, strict one-label JSON schema, K=10, reward log((m+1)/12), one HTTP attempt per physical call, and the response-provider check performed on every judgment"
+    }
+  ],
+  "canary": {
+    "maximum_single_request_cost_usd": 0.05,
+    "maximum_total_cost_usd": 0.5,
+    "must_verify": [
+      "exact_model",
+      "OpenAI_provider",
+      "flex_tier",
+      "strict_binary_JSON",
+      "positive_usage_receipt",
+      "reasoning_token_cost_projection"
+    ],
+    "requests": 10,
+    "required_before_training": true
+  },
+  "domain": "commonsenseqa",
+  "endpoint": {
+    "logprobs_requested": false,
+    "max_tokens": 256,
+    "model_id": "openai/gpt-5-mini",
+    "price_usd_per_million_tokens": {
+      "input": 0.125,
+      "output": 1.0
+    },
+    "provider": "OpenAI",
+    "provider_routing": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "minimal",
+      "exclude": true
+    },
+    "response_format": {
+      "label": [
+        0,
+        1
+      ]
+    },
+    "service_tier": "flex"
+  },
+  "held_out_evaluation": {
+    "checkpoint_selection": "not permitted on held-out test",
+    "checkpoints_to_score": [
+      2000
+    ],
+    "coding_timeout_seconds": 60,
+    "comparison_registry": "/orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/12_final_test_analysis_reconciliation/manifests/final_condition_registry_attempt001.json",
+    "comparison_registry_sha256": "35a8910b4d117950af49d73ce42df594ccdf2c210420d5ac5f421c5f6a6218d8",
+    "count": 1221,
+    "evaluation_timing": "only after training completes",
+    "generation_temperature": 0.0,
+    "max_new_tokens": 768,
+    "official_test_accessed": true,
+    "saved_checkpoints": [
+      0,
+      500,
+      1000,
+      1500,
+      2000
+    ],
+    "scored_by": "the shared final-test tool used by every other condition",
+    "selection_metric": "validation_task_utility",
+    "sha256": "264b7f586029b825586042bb2f0898fb3274af37a6896ac181cff34dd5b0f17a",
+    "source_manifest_sha256": "71c32aa9f488dfffb118636b294cd850244b89df50354ab48377dfdd27d996af",
+    "split": "/orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/evaluation_audits_and_reproducibility/01_data_protocol_runtime_gates/datasets/commonsenseqa/frozen_historical_seed23/test.jsonl"
+  },
+  "mbpp": "FORBIDDEN",
+  "official_test_accessed_at_protocol_write": false,
+  "post_training_held_out_access_authorized": true,
+  "protocol": "campaign-commonsenseqa-gpt5mini-k10-v3",
+  "reward": {
+    "judgments_per_logical_reward": 10,
+    "k": 10,
+    "logprobs_requested": false,
+    "maximum_http_attempts_per_physical_call": 8,
+    "reward_value": "log((m+1)/12)",
+    "smoothing": "(m+1)/(K+2)",
+    "transient_retry": {
+      "backoff_seconds": "min(5*2^(attempt-1), 60), Retry-After for HTTP 429",
+      "max_http_attempts": 8,
+      "retryable": [
+        "HTTP 429",
+        "HTTP 5xx",
+        "timeout",
+        "transport error",
+        "upstream 429/5xx error object inside an HTTP 200 body"
+      ]
+    }
+  },
+  "schema_version": 1,
+  "status": "DESIGNED_NOT_LAUNCHED",
+  "supersedes": {
+    "path": "/orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/17_gpt5mini_k10_multidomain/commonsenseqa/configs/protocol_v1.json",
+    "previous_supersedes": "campaign-kodcode-gpt5mini-k10-v2",
+    "protocol": "campaign-commonsenseqa-gpt5mini-k10-v2",
+    "sha256": "2d3d18130c77464edc673e356949a9d23334b6426ec706b06c04cad8ba06c50e"
+  },
+  "training": {
+    "actor_temperature": 0.6,
+    "actor_top_p": 1.0,
+    "beta": 0.003,
+    "checkpoints": [
+      0,
+      500,
+      1000,
+      1500,
+      2000
+    ],
+    "dataset": {
+      "actor_visible_fields": [
+        "question"
+      ],
+      "evaluator_only_fields": [
+        "reference_solution",
+        "hidden_tests"
+      ],
+      "prompt_count": 1000,
+      "sha256": "bb690c422197c5b0241c09d82e375d6c2bfd6404ab20adfa517d549dea4204c3",
+      "split": "commonsenseqa/frozen_historical_seed23/train.jsonl"
+    },
+    "generation_batch_size": 8,
+    "gradient_accumulation_steps": 1,
+    "gradient_checkpointing": true,
+    "hard_cost_cap_usd": 20.0,
+    "learning_rate": "3e-05",
+    "logical_rewards": 8000,
+    "lora": {
+      "alpha": 32,
+      "dropout": 0.05,
+      "r": 32
+    },
+    "loss_type": "dr_grpo",
+    "lr_scheduler_type": "constant",
+    "mask_truncated_completions": true,
+    "max_completion_length": 768,
+    "max_prompt_tokens": 4096,
+    "max_steps": 2000,
+    "num_epochs": 2,
+    "num_generations": 4,
+    "paid_judgments": 80000,
+    "per_device_train_batch_size": 4,
+    "save_steps": 500,
+    "save_strategy": "steps",
+    "scale_rewards": "group",
+    "seed": 23,
+    "warmup_ratio": 0.0
+  }
+}

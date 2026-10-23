@@ -1,0 +1,124 @@
+project:
+  root: /path/to/iar_code
+  seed: 23
+campaign:
+  campaign_id: campaign-gsm8k-gpt5mini-k10-v2
+  step: 17
+  domain: gsm8k
+  protocol: /path/to/runs/17_gpt5mini_k10_multidomain/gsm8k/configs/protocol_v2.json
+  protocol_sha256: cef87d02c697f52cd9596cff98b6baaa36ce117650f68a3e97d0b075716f9404
+paths:
+  hf_cache: /path/to/cache/huggingface
+  experiments: /path/to/runs/17_gpt5mini_k10_multidomain/gsm8k/training/runs
+  checkpoints: /path/to/runs/17_gpt5mini_k10_multidomain/gsm8k/training/checkpoints
+dataset:
+  split_file: /path/to/runs/evaluation_audits_and_reproducibility/01_data_protocol_runtime_gates/datasets/gsm8k/frozen_historical_seed23/official_train.jsonl
+  split_file_sha256: ed030cdd749e339dc76c069457ad1212411647c7d9c1186956d62fb9e8f52cb2
+  selection: frozen_train_core1000
+  prompt_count: 1000
+  actor_visible_fields:
+  - question
+  evaluator_only_fields:
+  - reference_solution
+  - answer_value
+trial:
+  run_name: gsm8k_gpt5mini_k10_seed23
+  prompt_count: 1000
+  expected_reward_calls: 8000
+actor:
+  model_id: Qwen/Qwen2.5-1.5B-Instruct
+  revision: 989aa7980e4cf806f80c7fef2b1adb7bc71aa306
+  local_files_only: true
+  lora:
+    r: 32
+    alpha: 32
+    dropout: 0.05
+    target_modules:
+    - q_proj
+    - k_proj
+    - v_proj
+    - o_proj
+    - gate_proj
+    - up_proj
+    - down_proj
+discriminator:
+  model_id: openai/gpt-5-mini
+  target_model_name: GPT-5 Mini
+  expected_provider: OpenAI
+  provider_routing:
+    allow_fallbacks: false
+    only:
+    - openai
+  request_overrides:
+    service_tier: flex
+    reasoning:
+      effort: minimal
+      exclude: true
+  temperature: 1.0
+  judge_max_tokens: 256
+  top_logprobs: 0
+  strict_logprobs: false
+  attribution_prompt_version: phase0-pointwise-self-attribution-v2-no-system
+reward:
+  type: closed_weight_repeated_binary
+  value: closed_weight_log_p_own_k10
+  epsilon: 1.0e-06
+  max_reward_calls: 8000
+  max_http_requests: 640000
+  max_attempts_per_call: 8
+  max_concurrency: 2
+  minimum_request_interval_seconds: 0.0
+  timeout_seconds: 180
+  max_retry_wait_seconds: 60
+  store_raw_response: true
+  judgments_per_reward: 10
+  smoothing: (m+1)/12
+training:
+  algorithm: GRPO
+  world_size: 1
+  num_epochs: 2
+  num_generations: 4
+  generation_batch_size: 8
+  per_device_train_batch_size: 4
+  gradient_accumulation_steps: 1
+  max_steps: 2000
+  max_prompt_tokens: 4096
+  max_completion_length: 768
+  temperature: 0.6
+  top_p: 1.0
+  learning_rate: 3.0e-05
+  warmup_ratio: 0.0
+  lr_scheduler_type: constant
+  gradient_checkpointing: true
+  mask_truncated_completions: true
+  beta: 0.003
+  loss_type: dr_grpo
+  scale_rewards: group
+  num_completions_to_print: 0
+  save_strategy: steps
+  save_steps: 500
+  save_total_limit: null
+evaluation:
+  validation_only: true
+  validation_file: /path/to/runs/01_data_protocol_runtime_gates/datasets/gsm8k/frozen_historical_seed23/validation.jsonl
+  validation_file_sha256: a259ff19616dd1c39373f8c7268587d8ae441c39d896967bbb5c9d5c127fdd4a
+  validation_count: 300
+  checkpoints:
+  - 0
+  - 500
+  - 1000
+  - 1500
+  - 2000
+  baseline_registry: /path/to/runs/05_four_domain_screen_1p5b/results/validation_baseline_registry_v1.json
+  baseline_registry_sha256: 28aebc2741ec6b764de66a174f6b2d422b2607a04ee59d457216e83cf9254aa2
+  batch_size: 8
+  max_new_tokens: 768
+  temperature: 0
+  top_p: 1.0
+  coding_timeout_seconds: 60
+  select_on: validation_task_utility
+  tie_break: earliest_checkpoint
+  official_test_accessed: false
+  held_out_only: true
+  checkpoints_to_score:
+  - 2000

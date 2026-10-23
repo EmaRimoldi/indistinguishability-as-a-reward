@@ -1,0 +1,80 @@
+{
+  "audit_date": "2026-10-22",
+  "github_base_commit": "4fc149190ab342a2c1ab1c9238875d42d91735e4",
+  "overleaf_commit": "929ec888e05dccb5b483ca0f658f95970c5c91d3",
+  "overleaf_project": "6a875718869077d19f4a7d27",
+  "engaging_project": "/home/erimoldi/projects/indistinguishability-as-a-reward",
+  "engaging_head": "81c9fcdffdc559f08fa49fb39d68c9e59e695362",
+  "engaging_checkout_dirty": true,
+  "original_desktop": "/Users/emanuelerimoldi/Desktop/iar_code-2",
+  "sources": {
+    "desktop_original": {
+      "origin": "/Users/emanuelerimoldi/Desktop/iar_code-2",
+      "files": 167,
+      "original_archive_sha256": "e433ab070d4900d7beabe139508f76da800ced6693273a5d07c6ba19d4eae68f"
+    },
+    "identity_seed42": {
+      "origin": "/orcd/pool/008/erimoldi/iar/source/identity_seed42_four_domain_v1_20260917T150000Z",
+      "files": 196,
+      "original_archive_sha256": "c6d6d78660e078966fbf7e2071438dd514080f692812143ef611ff4269b8721f"
+    },
+    "causal_v93": {
+      "origin": "/orcd/pool/008/erimoldi/iar/source/campaign_20260908_v2_causal_v93_20260911T120000Z",
+      "files": 140,
+      "original_archive_sha256": "8c1c3016d0eec8e8e4505d2f9fd4804ef1c441683cd5ee3c3e9c827bd3b74180"
+    },
+    "k10_multidomain_v2": {
+      "origin": "/orcd/pool/008/erimoldi/iar/source/campaign_20260908_v2_step17_gpt5mini_k10_multidomain_v2_transient_retry_20260924T000000Z",
+      "files": 135,
+      "original_archive_sha256": "974cd9bb9c4e8051ec26ec20ba033415b29ed435543b8af71fd32c0acb24acc0"
+    },
+    "k10_kodcode_v13": {
+      "origin": "/orcd/pool/008/erimoldi/iar/source/campaign_20260908_v2_step16_kodcode_gpt5mini_k10_v13_transient_retry_20260924T001500Z",
+      "files": 134,
+      "original_archive_sha256": "9690a47358ad4691e408d238d3bf94cee388e01cd728070228613d903d20f445"
+    },
+    "baseline_extension_v4": {
+      "origin": "/orcd/pool/008/erimoldi/iar/source/campaign_20260908_v2_step15_baseline_extension_overlay_v4_20260913T001000Z",
+      "files": 13,
+      "original_archive_sha256": "4bf4f5df24b81c94621fb37954758880db7a0ec7cbe1b2e49323e7f817b0e257"
+    }
+  },
+  "manuscript_tex_sha256": {
+    "paper_limitations.tex": "cde8c249bf91b87a9b6e4dc93937777b22d6df1881d8e26f88e71ed68cb148d1",
+    "paper_related_work.tex": "ac95309e747f86a952b725e9a1d3619cee857bd9bbcbc689498ad6f73f43191e",
+    "paper_introduction.tex": "ae62b1cb0df6ec9effa1e624be912ba09b5dbd4e8da3cca618c5ea374694add9",
+    "paper_discussion.tex": "6f69be8c2df86c329f1117dc5dcd43b3c8db105a27722ecd951cd680044e682d",
+    "main.tex": "27fd2b01df65ada63b15f0b8d9a33ee95db37777b88e5b3a66cf1791fbf0acb8",
+    "paper_appendix.tex": "a92add266ccbaa2645905d5e6efd5a03e869b581cb77cf84ea02955f63bd41e9",
+    "preprint.tex": "99bb896126015fe7e4aea3d87efeaa15c76d2ed95f1f32ac75b057e0b535f1cb",
+    "paper_results_audit.tex": "e8e9abc4cb31a4569c0c470e21ec91b0dd5b36c5b6e0a573efa1f94041934d51",
+    "preprint_v2.tex": "8594c80cd26b58bb0ac87ce7adf71bbdb8786e319a78658f04f2b1084b10cbf6",
+    "paper_body.tex": "b4ff94b0c57a8618c3c7544d87240f8cbe9be72c84d85f53e4c409520c212829",
+    "theory_bounds.tex": "b308a3e977e5221cc963162060ddb2c94fb2365113396eb4e2f2517e57f26e32"
+  },
+  "manuscript_figure_sources_sha256": {
+    "plot_within_prompt.py": "ca8364651f1debfefca4fd32c78d63456c00660a4cad8cd80d53dd80a557a0c7",
+    "plot_training_diagnostics.py": "c0a9ff3415c5162fd205668f8eca4b4725b2bd046240efc6b6d7da1b3ccbda57",
+    "plot_response_length.py": "5c6713c7c6525786507bba8c772e6b68cfc60d7ddc6bbc8b222c5db281916c3f",
+    "plot_correctness_deciles.py": "6c076deb5032284df87d5f9974dc9618afc5b9e10d26422454d91c7ee9a492ec",
+    "plot_judge_vs_reward.py": "c41ec228974e0a9e2d8626532dbdf260d1e2133978a1c8fef44bc0a8e720aa43",
+    "plot_reward_distributions.py": "5b5c7daa9612914c07d8918cadf780d7fccf567b838a06c0f0af305c6d06b6ee",
+    "plot_learning_to_fool.py": "3ef383111b03237a2b2c2c1f91a96638a45114dcf8bf996b7db2ad87fd28f5f5",
+    "plot_reward_signal.py": "7ef03ff7603b66a949310c79edad69306d2bec2ba0c170ab9ee28f138913b659",
+    "figstyle.py": "f2ed9cf7d1a469ccb174681ddf03b0a725d5269b4b809a22f7f2a2c3491566ea",
+    "plot_format_gap.py": "c0982f134b9a4c24922544d149a33b13b2db93e4b719b7cb70ce4ee6d94279f5"
+  },
+  "manuscript_figure_data_sha256": {
+    "fooling_rate_data.json": "b64a8bf5a502cac88ddbc71bb4d1be49f4cd9da1b1d547d2aca4f92418569048",
+    "correctness_deciles_seeds.json": "bd642cd7a93ae8fba790f2b73df96f4bc2db966149027f2816204e980e59839a",
+    "reward_contrast_data.json": "5c1ef657397609a24b036677675a6af2222ae151f83618b3f4735749106b0126",
+    "correctness_deciles_data.json": "afcc71c8e388cd17fc2217e9f8aa24ddb67aaf278a94685aff564792b2138c7f",
+    "reward_distributions_seeds.json": "cbb27814704af8a4e4f50c63ff98559eebfbc61c211b215959af4c02ed79cd1b",
+    "format_gap_data.json": "b544753625dd4ddcad43cf31fe83130dbfeaf061721ac382a40d79d7938080d8",
+    "judge_vs_reward_data.json": "bdbaab6d20d8e090828c3920956260133e8b665acbbcae56145522bac34d9e1e",
+    "training_trajectory_seeds.json": "b7786ac5f14dbc9d9abe56c1fcba186e576a717d5f53df199d73854acd0841cf",
+    "response_length_data.json": "38fa13f1a731f79f2e9fbb7a90340df4e81a101c1356f8643447e9ca526d6d7a"
+  },
+  "resource_forks_excluded": true,
+  "package_policy": "Source, frozen training/evaluation inputs, configurations and code provenance only. Experimental outputs are external."
+}

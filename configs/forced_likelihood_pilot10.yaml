@@ -1,0 +1,53 @@
+project:
+  name: indistinguishability-as-a-reward
+  root: /home/erimoldi/projects/indistinguishability-as-a-reward
+  seed: 20260824
+
+paths:
+  experiments: experiments
+  openrouter_env: models/openrouter/.env
+
+forced_likelihood:
+  # The canonical source is the isolated n=30 Style-vs-Content run.  The
+  # pilot takes its first ten anchors in stored order; it does not reuse any
+  # prior direct realization.
+  anchors_path: /orcd/scratch/bcs/002/erimoldi/style-vs-content/CAST_v6/cast_v6_scalar_clean_concise_n30_isolated_v1/anchors.jsonl
+  anchor_count: 10
+  run_name: forced_likelihood_pilot10
+
+  # Both models are open-weight instruction models.  The requested model ID
+  # and the returned model ID are recorded for every call; provider fallbacks
+  # are disabled, so a failed endpoint fails the pilot rather than changing
+  # the estimand.
+  models:
+    - id: qwen/qwen3-8b
+      label: Qwen3-8B
+    - id: mistralai/ministral-8b-2512
+      label: Ministral-3-8B
+
+  provider_routing:
+    require_parameters: true
+    allow_fallbacks: false
+  request_overrides:
+    reasoning:
+      enabled: false
+
+  generation:
+    max_tokens: 256
+    temperature: 0.7
+    top_p: 0.95
+
+  # Scoring uses the OpenAI-compatible /completions endpoint with echo=true.
+  # This returns the log-probability for every token in h(c) concatenated
+  # with the observed realization, permitting a direct estimate of ell_i.
+  scoring:
+    endpoint: completions_echo
+    logprobs: 1
+
+  # Each oracle sees each pair in both display orders.  This is a small pilot
+  # of the readout prediction, not a powered inferential test.
+  pairwise_readout:
+    enabled: true
+    max_tokens: 1
+    temperature: 0.0
+    logprobs: 5

@@ -1,0 +1,110 @@
+status: PREPARED_NOT_AUTHORIZED
+execution_guard: DO_NOT_SUBMIT_WITHOUT_EXPLICIT_USER_AUTHORIZATION
+
+project:
+  root: /home/erimoldi/projects/indistinguishability-as-a-reward
+  seed: 23
+
+paths:
+  split_dir: data/gsm8k/main_seed23
+  hf_cache: models/cache/huggingface
+  experiments: experiments/gsm8k_deepseek_v1/training/official/gsm8k_grpo_log_p_own_v2
+  checkpoints: models/checkpoints/gsm8k_deepseek_v1/official_log_p_own_v2
+  openrouter_env: models/openrouter/.env
+
+dataset:
+  id: openai/gsm8k
+  config: main
+  revision: 740312add88f781978c0658806c59bc2815b9866
+  source_file: official_train.jsonl
+  selection: frozen_split_order
+  prompt_count: 1000
+  validation_file: validation.jsonl
+  validation_count: 300
+  final_test_file: test.jsonl
+  final_test_count: 1319
+  final_test_policy: only_after_checkpoint_selection
+
+trial:
+  run_name: gsm8k_grpo_official_log_p_own_seed23
+  expected_reward_calls: 8000
+
+actor:
+  model_id: Qwen/Qwen2.5-1.5B-Instruct
+  local_files_only: true
+  lora:
+    r: 32
+    alpha: 32
+    dropout: 0.05
+    target_modules: [q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj, down_proj]
+
+discriminator:
+  model_id: deepseek/deepseek-v4-flash
+  target_model_name: DeepSeek V4 Flash
+  attribution_prompt_version: gsm8k-pointwise-self-attribution-v1-no-system
+  provider_routing:
+    order: [DigitalOcean]
+    require_parameters: true
+    allow_fallbacks: false
+  request_overrides:
+    reasoning:
+      enabled: false
+  temperature: 0
+  judge_max_tokens: 1
+  top_logprobs: 5
+  strict_logprobs: true
+
+reward:
+  type: pointwise_self_attribution_logprob
+  value: log_p_own
+  max_reward_calls: 8000
+  max_http_requests: 96000
+  max_attempts_per_call: 12
+  max_concurrency: 2
+  timeout_seconds: 120
+  minimum_request_interval_seconds: 2.0
+  max_retry_wait_seconds: 120
+  store_raw_response: true
+
+training:
+  algorithm: GRPO
+  world_size: 1
+  num_epochs: 2
+  num_generations: 4
+  generation_batch_size: 40
+  per_device_train_batch_size: 4
+  gradient_accumulation_steps: 1
+  max_steps: 2000
+  max_prompt_tokens: 1024
+  max_completion_length: 768
+  max_completion_length_selection: phase0_p99_plus_32_rounded_to_32_capped_at_768
+  temperature: 0.6
+  top_p: 1.0
+  learning_rate: 3.0e-5
+  warmup_ratio: 0.0
+  lr_scheduler_type: constant
+  gradient_checkpointing: true
+  mask_truncated_completions: true
+  beta: 0.003
+  loss_type: dr_grpo
+  scale_rewards: group
+  num_completions_to_print: 0
+  save_strategy: steps
+  save_steps: 1000
+  save_total_limit: null
+
+evaluation:
+  checkpoints: [0, 1000, 2000]
+  validation_count: 300
+  test_count: 1319
+  batch_size: 8
+  max_new_tokens: 768
+  temperature: 0
+  top_p: 1.0
+  paired_lcb_z: 1.6448536269514722
+  select_on: validation_paired_p_own_lcb_audit_accuracy_only
+  maximum_accuracy_drop: 0.02
+  max_reward_attempts: 12
+  max_concurrency: 2
+  timeout_seconds: 120
+  test_after_selection_only: true

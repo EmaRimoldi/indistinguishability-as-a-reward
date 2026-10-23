@@ -1,0 +1,82 @@
+project:
+  root: /home/erimoldi/projects/indistinguishability-as-a-reward
+  seed: 23
+
+paths:
+  teacher_root: data/distillation/deepseek_v4_flash_v1
+  teacher_config: configs/deepseek_teacher_datasets_v1.yaml
+  hf_cache: models/cache/huggingface
+  experiments: experiments/offline_distillation_deepseek_v1
+  checkpoints: models/checkpoints/offline_distillation_deepseek_v1
+
+actor:
+  model_id: Qwen/Qwen2.5-1.5B-Instruct
+  local_files_only: true
+  lora:
+    r: 32
+    alpha: 32
+    dropout: 0.05
+    target_modules: [q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj, down_proj]
+
+generation:
+  policy: frozen_step0_greedy
+  batch_size: 8
+  temperature: 0.0
+  top_p: 1.0
+
+domains:
+  mbpp:
+    seed: 17
+    expected_count: 500
+    max_new_tokens: 768
+    max_prompt_length: 4096
+    max_length: 4864
+    score_timeout_seconds: 5
+    steps_per_epoch: 125
+    max_steps: 250
+  commonsenseqa:
+    seed: 23
+    expected_count: 1000
+    max_new_tokens: 256
+    max_prompt_length: 1024
+    max_length: 1280
+    steps_per_epoch: 250
+    max_steps: 500
+  gsm8k:
+    seed: 23
+    expected_count: 1000
+    max_new_tokens: 768
+    max_prompt_length: 1024
+    max_length: 1792
+    steps_per_epoch: 250
+    max_steps: 500
+
+training:
+  comparison_unit: same_prompt_exposures
+  effective_batch_size: 4
+  sft:
+    dataset: sft_all
+    num_epochs: 2
+    learning_rate: 1.0e-4
+    per_device_train_batch_size: 1
+    gradient_accumulation_steps: 4
+    gradient_checkpointing: true
+    warmup_ratio: 0.0
+    lr_scheduler_type: constant
+    logging_steps: 1
+  dpo:
+    dataset: dpo_pairs
+    preference_rule: deepseek_chosen_except_qwen_correct_deepseek_wrong
+    reference_policy: frozen_qwen_step0
+    num_epochs: 2
+    learning_rate: 1.0e-5
+    beta: 0.1
+    loss_type: sigmoid
+    precompute_ref_log_probs: true
+    disable_dropout: false
+    per_device_train_batch_size: 1
+    gradient_accumulation_steps: 4
+    gradient_checkpointing: true
+    warmup_ratio: 0.0
+    lr_scheduler_type: constant
+    logging_steps: 1

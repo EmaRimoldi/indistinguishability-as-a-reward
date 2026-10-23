@@ -1,0 +1,99 @@
+project:
+  root: /home/erimoldi/projects/indistinguishability-as-a-reward
+  seed: 23
+
+paths:
+  split_dir: data/commonsenseqa/cose_v1_11_seed23
+  hf_cache: models/cache/huggingface
+  experiments: experiments/commonsenseqa_deepseek_v1/training/full/cqa_grpo_log_p_own_v2
+  checkpoints: models/checkpoints/cqa_grpo_log_p_own_v2
+  openrouter_env: models/openrouter/.env
+
+dataset:
+  source_file: train.jsonl
+  selection: exact_answer_balanced
+  prompt_count: 1000
+  per_answer_label: 200
+
+trial:
+  run_name: cqa_grpo_log_p_own_seed23
+  expected_reward_calls: 8000
+
+actor:
+  model_id: Qwen/Qwen2.5-1.5B-Instruct
+  local_files_only: true
+  lora:
+    r: 32
+    alpha: 32
+    dropout: 0.05
+    target_modules: [q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj, down_proj]
+
+discriminator:
+  model_id: deepseek/deepseek-v4-flash
+  target_model_name: DeepSeek V4 Flash
+  attribution_prompt_version: commonsenseqa-pointwise-self-attribution-v1-no-system
+  provider_routing:
+    order: [DigitalOcean]
+    require_parameters: true
+    allow_fallbacks: false
+  request_overrides:
+    reasoning:
+      enabled: false
+  temperature: 0
+  judge_max_tokens: 1
+  top_logprobs: 5
+  strict_logprobs: true
+
+reward:
+  type: pointwise_self_attribution_logprob
+  value: log_p_own
+  max_reward_calls: 8000
+  max_http_requests: 96000
+  max_attempts_per_call: 12
+  max_concurrency: 2
+  minimum_request_interval_seconds: 2.0
+  timeout_seconds: 120
+  max_retry_wait_seconds: 60
+  store_raw_response: true
+
+training:
+  algorithm: GRPO
+  world_size: 1
+  num_epochs: 2
+  num_generations: 4
+  generation_batch_size: 40
+  per_device_train_batch_size: 4
+  gradient_accumulation_steps: 1
+  max_steps: 2000
+  max_prompt_tokens: 1024
+  max_completion_length: 256
+  temperature: 0.6
+  top_p: 1.0
+  learning_rate: 3.0e-5
+  warmup_ratio: 0.0
+  lr_scheduler_type: constant
+  gradient_checkpointing: true
+  mask_truncated_completions: true
+  beta: 0.003
+  loss_type: dr_grpo
+  scale_rewards: group
+  num_completions_to_print: 0
+  save_strategy: steps
+  save_steps: 1000
+  save_total_limit: null
+
+evaluation:
+  checkpoints: [0, 1000, 2000]
+  validation_count: 300
+  per_answer_label: 60
+  test_count: 1221
+  batch_size: 8
+  max_new_tokens: 256
+  temperature: 0
+  top_p: 1.0
+  paired_lcb_z: 1.6448536269514722
+  select_on: validation_paired_p_own_lcb_audit_accuracy_only
+  maximum_accuracy_drop: 0.02
+  max_reward_attempts: 12
+  max_concurrency: 2
+  timeout_seconds: 120

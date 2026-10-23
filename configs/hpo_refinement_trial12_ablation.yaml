@@ -1,0 +1,61 @@
+parent_study: grpo_log_p_own_v1
+parent_trial: 12
+decision_basis:
+  objective_value: 0.02418646918804713
+  selected_step: 100
+  p_own_delta_mean: 0.062382428828468395
+  sampled_fooling_delta: 0.05555555555555555
+  argmax_fooling_delta: 0.07777777777777778
+  net_passed_change: 8
+  note: >-
+    Trial 12 is the first TPE proposal to improve the pre-registered LCB,
+    continuous fooling, sampled fooling, argmax fooling and pass@1 together.
+    These one-factor ablations identify which part of its interaction is
+    necessary before multi-seed confirmation.
+
+configurations:
+  - name: trial12_group_scaling
+    rationale: Isolate whether batch reward scaling is necessary for the trial-12 gain.
+    parameters: &trial12_group
+      learning_rate: 3.0e-5
+      beta: 3.0e-3
+      temperature: 0.6
+      lora_r: 32
+      lora_alpha: 32
+      lora_dropout: 0.05
+      scale_rewards: group
+
+  - name: trial12_no_dropout
+    rationale: Isolate whether LoRA dropout 0.05 contributes to the gain.
+    parameters:
+      <<: *trial12_group
+      scale_rewards: batch
+      lora_dropout: 0.0
+
+  - name: trial12_rank64
+    rationale: Test whether the gain survives at the Turing-RL LoRA rank.
+    parameters:
+      <<: *trial12_group
+      scale_rewards: batch
+      lora_r: 64
+
+  - name: trial12_lower_beta
+    rationale: Isolate the stronger KL coefficient while retaining the other trial-12 values.
+    parameters:
+      <<: *trial12_group
+      scale_rewards: batch
+      beta: 1.0e-3
+
+  - name: trial12_lower_learning_rate
+    rationale: Isolate the higher learning rate while retaining the other trial-12 values.
+    parameters:
+      <<: *trial12_group
+      scale_rewards: batch
+      learning_rate: 1.0e-5
+
+  - name: trial12_higher_temperature
+    rationale: Check whether temperature 0.8 improves exploration around the trial-12 interaction.
+    parameters:
+      <<: *trial12_group
+      scale_rewards: batch
+      temperature: 0.8

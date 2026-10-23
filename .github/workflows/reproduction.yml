@@ -1,0 +1,36 @@
+name: Reproduction checks
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  offline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      HF_HUB_OFFLINE: '1'
+      TRANSFORMERS_OFFLINE: '1'
+      MPLBACKEND: Agg
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.14'
+      - uses: astral-sh/setup-uv@v6
+      - name: Install isolated CPU environment
+        run: |
+          uv venv --python 3.14 .venv
+          uv pip install --python .venv/bin/python torch==2.13.0 --index-url https://download.pytorch.org/whl/cpu
+          uv pip install --python .venv/bin/python -r reproduction/environment/requirements-portable.txt
+      - name: Verify inputs and all experiment configurations
+        run: .venv/bin/python -m iar_repro verify --output runs/verification.json
+      - name: Tests and synthetic training
+        run: |
+          .venv/bin/python -m pytest -q
+          .venv/bin/python -m iar_repro smoke
+      - name: Check documentation links and source-only archive
+        run: |
+          .venv/bin/python scripts/tools/check_links.py
+          .venv/bin/python scripts/tools/build_reproduction_package.py

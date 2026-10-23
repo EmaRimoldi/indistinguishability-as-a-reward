@@ -1,0 +1,51 @@
+project:
+  name: indistinguishability-as-a-reward
+  root: /home/erimoldi/projects/indistinguishability-as-a-reward
+  seed: 29
+
+paths:
+  data_cache: data/cache
+  hf_cache: models/cache/huggingface
+  experiments: experiments
+  openrouter_env: models/openrouter/.env
+  model_manifest: models/manifests/models.yaml
+
+dataset:
+  name: google-research-datasets/mbpp
+  config_name: null
+  prompt_style: mbpp_google_original
+  fewshot_split: prompt
+  fewshot_count: 10
+
+discriminator:
+  role: B
+  provider: openrouter
+  model_id: openai/gpt-oss-120b
+  judge_max_tokens: 256
+  temperature: 0
+  logprobs: true
+  top_logprobs: 5
+  strict_logprobs: true
+  request_overrides:
+    reasoning:
+      effort: low
+      exclude: true
+  provider_routing:
+    order:
+      - CoreWeave
+    require_parameters: true
+    allow_fallbacks: false
+
+unit_tests:
+  timeout_seconds: 5
+
+severity_probe:
+  run_name: gpt_oss_severity_probe
+  target_model_name: OpenAI GPT-OSS 120B
+  split: test
+  scan_count: 100
+  selected_task_count: 10
+  workers: 4
+  source_runs:
+    b_own: experiments/mbpp_gpt_oss_audit_v1/generation/gpt_oss_b_own_test100_20260825T185609Z
+    plain: experiments/mbpp_deepseek_v1/phase0/baselines/plain_test_20260823T212714Z

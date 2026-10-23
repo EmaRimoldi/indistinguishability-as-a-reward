@@ -1,0 +1,2562 @@
+{
+  "src/iar_analysis/__init__.py": {
+    "sha256": "39377376476a22935ccfa03935262ec78d5609ef879953990f7ad13d0a4bddcd",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_analysis/__init__.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_analysis/__init__.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_analysis/__init__.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_analysis/__init__.py"
+      }
+    ]
+  },
+  "src/iar_analysis/checkpoint_selector.py": {
+    "sha256": "acafdf5b7deed9204b59a4d4f18f2b176a8bdd3917738cfdf4b1137ddca1fe24",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_analysis/checkpoint_selector.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_analysis/checkpoint_selector.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_analysis/checkpoint_selector.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_analysis/checkpoint_selector.py"
+      }
+    ]
+  },
+  "src/iar_analysis/evaluation_resume.py": {
+    "sha256": "73cab440985fd5ad656dc7007a20b8f10c43622314f197da277e482c429efa58",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_analysis/evaluation_resume.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_analysis/evaluation_resume.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_analysis/evaluation_resume.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_analysis/evaluation_resume.py"
+      }
+    ]
+  },
+  "src/iar_analysis/reward_pilot.py": {
+    "sha256": "40af4dd0f889ee813ae0f98dacc4d7902f36b28f9449cb769953eb4c48f5166e",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_analysis/reward_pilot.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_analysis/reward_pilot.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_analysis/reward_pilot.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_analysis/reward_pilot.py"
+      }
+    ]
+  },
+  "src/iar_campaign/__init__.py": {
+    "sha256": "7fa6b5c3089b14890c6117db04fa06f2c3a638dfbcd1a05e59809f5c6e12b2ae",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_campaign/__init__.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_campaign/__init__.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_campaign/__init__.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_campaign/__init__.py"
+      },
+      {
+        "family": "desktop_original",
+        "file": "src/iar_campaign/__init__.py"
+      }
+    ]
+  },
+  "src/iar_campaign/baseline_evaluation.py": {
+    "sha256": "78be1bfb2d61420c8297bfc77353d6c1c75c56e27e75e0358d6d1c9f099b6df5",
+    "matches": [
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_campaign/baseline_evaluation.py"
+      }
+    ]
+  },
+  "src/iar_campaign/baseline_rewards.py": {
+    "sha256": "75a10b64e5ce4a87198baeb4430aa04197aba955d2bf0ca272a67d7b32624e12",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_campaign/baseline_rewards.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_campaign/baseline_rewards.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_campaign/baseline_rewards.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_campaign/baseline_rewards.py"
+      },
+      {
+        "family": "desktop_original",
+        "file": "src/iar_campaign/baseline_rewards.py"
+      }
+    ]
+  },
+  "src/iar_campaign/baseline_suite.py": {
+    "sha256": "820391b184b37ab020e7b6b3b365750b45ef5711a1c04fce15c4f8bcfdc744f4",
+    "matches": [
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_campaign/baseline_suite.py"
+      },
+      {
+        "family": "desktop_original",
+        "file": "src/iar_campaign/baseline_suite.py"
+      }
+    ]
+  },
+  "src/iar_campaign/causal_reward_audit.py": {
+    "sha256": "fe920479b3e4bf755ae5449b59aafe61327a1676a9130e8857126afcb194b7b4",
+    "matches": [
+      {
+        "family": "causal_v93",
+        "file": "src/iar_campaign/causal_reward_audit.py"
+      }
+    ]
+  },
+  "src/iar_campaign/closed_weight_k10.py": {
+    "sha256": "0c93480981c0aa2a106d0aa0e7d05e6d2f10a4f0c0292dc3bb9d9d2259dba577",
+    "matches": [
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_campaign/closed_weight_k10.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_campaign/closed_weight_k10.py"
+      }
+    ]
+  },
+  "src/iar_campaign/data_protocol.py": {
+    "sha256": "00a46af42822ae8b6b410815569e30aa49100539208c0e54711c80c9881d08d0",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_campaign/data_protocol.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_campaign/data_protocol.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_campaign/data_protocol.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_campaign/data_protocol.py"
+      }
+    ]
+  },
+  "src/iar_campaign/discriminator_transfer.py": {
+    "sha256": "7dde40a263c1bf4f361f918e6ce0967abb725e08dbf899555a1d7827a6e98288",
+    "matches": [
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_campaign/discriminator_transfer.py"
+      }
+    ]
+  },
+  "src/iar_campaign/domain_selection.py": {
+    "sha256": "03ca236d6c22891b77b347e61b49d7e9226891bb3b56256f43a2a0cee9f8bcb7",
+    "matches": [
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_campaign/domain_selection.py"
+      }
+    ]
+  },
+  "src/iar_campaign/final_test.py": {
+    "sha256": "5217c47dec869dc0b94da3535be075266fb03bcbc66f05b9b7458169ef63c78e",
+    "matches": [
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_campaign/final_test.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_campaign/final_test.py"
+      }
+    ]
+  },
+  "src/iar_campaign/four_domain_screen.py": {
+    "sha256": "6c34e1bd5a3a1de40cd19e2f7b780ac462c2c63ac3597beeddd7f17920210c96",
+    "matches": [
+      {
+        "family": "desktop_original",
+        "file": "src/iar_campaign/four_domain_screen.py"
+      }
+    ]
+  },
+  "src/iar_campaign/generate.py": {
+    "sha256": "3ce4e1587995ff0cffe45234ecba538e95fe01261c534495f787578d624da2a4",
+    "matches": []
+  },
+  "src/iar_campaign/gpt5mini_k10_multidomain.py": {
+    "sha256": "7758a49721f181121e6b3008ccc79de92771be14603aef08ad294710ad12c792",
+    "matches": [
+      {
+        "family": "desktop_original",
+        "file": "src/iar_campaign/gpt5mini_k10_multidomain.py"
+      }
+    ]
+  },
+  "src/iar_campaign/judge_sanity.py": {
+    "sha256": "e35aa484759b827653b9e99eda93e8ef3db30e228f14dd6a066ef696eb97c6a6",
+    "matches": []
+  },
+  "src/iar_campaign/kodcode_gpt5mini_k10.py": {
+    "sha256": "978738b66cdb7df59a6da7b03e4e423935973a482f519501bbfe208762d4c072",
+    "matches": []
+  },
+  "src/iar_campaign/pairwise_experiment.py": {
+    "sha256": "190edc4de0577f4833f85e495ffbb322d5eae6f9846e34a30b0bf1b6d4999209",
+    "matches": [
+      {
+        "family": "desktop_original",
+        "file": "src/iar_campaign/pairwise_experiment.py"
+      }
+    ]
+  },
+  "src/iar_campaign/pairwise_reward.py": {
+    "sha256": "e96903e30ac213ae773555c9c045a643aca0b1744fa1d7e3088b6cf66e0ecd99",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_campaign/pairwise_reward.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_campaign/pairwise_reward.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_campaign/pairwise_reward.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_campaign/pairwise_reward.py"
+      },
+      {
+        "family": "desktop_original",
+        "file": "src/iar_campaign/pairwise_reward.py"
+      }
+    ]
+  },
+  "src/iar_campaign/reward_alignment.py": {
+    "sha256": "004232508dd52d58ed31e7e1933e0f4c92de10e2813c2c7db5b001a9088af486",
+    "matches": [
+      {
+        "family": "desktop_original",
+        "file": "src/iar_campaign/reward_alignment.py"
+      }
+    ]
+  },
+  "src/iar_campaign/reward_pilot.py": {
+    "sha256": "ed6201b7b2ab4369cb7c45a68078baf87ef56bb85c7fb732d59e34d30b0cd88a",
+    "matches": []
+  },
+  "src/iar_campaign/scale_3b.py": {
+    "sha256": "9d9bd6ded181f1eecf5a72953cd60d296fb1ba639d8f466766461783e9a1edd2",
+    "matches": [
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_campaign/scale_3b.py"
+      }
+    ]
+  },
+  "src/iar_campaign/score_baselines.py": {
+    "sha256": "8e8bd50eda040c2c31654ae1654f38839b617bf21620bd45c363594e7c7227e3",
+    "matches": [
+      {
+        "family": "desktop_original",
+        "file": "src/iar_campaign/score_baselines.py"
+      }
+    ]
+  },
+  "src/iar_campaign/sft_baseline.py": {
+    "sha256": "52bad9a0e88c48a4df222650a48976a11e64b3b6464ba4acf592aa0026d1dc60",
+    "matches": []
+  },
+  "src/iar_campaign/step5_validation.py": {
+    "sha256": "30b50b885a49c66973eab4996284229d257c293fc2643c174e1e220effc04b1c",
+    "matches": [
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_campaign/step5_validation.py"
+      }
+    ]
+  },
+  "src/iar_campaign/teacher_corpus.py": {
+    "sha256": "4a49889c5e3b7bf0cb490e0856d86e02086214f105aa04d302e16f6ace5c1f24",
+    "matches": [
+      {
+        "family": "desktop_original",
+        "file": "src/iar_campaign/teacher_corpus.py"
+      }
+    ]
+  },
+  "src/iar_campaign/teacher_corpus_extension.py": {
+    "sha256": "5a9c49948b786c143581eda07b4fd5a5df3002a025eab67e2f714c7a411d841d",
+    "matches": [
+      {
+        "family": "baseline_extension_v4",
+        "file": "src/iar_campaign/teacher_corpus.py"
+      }
+    ]
+  },
+  "src/iar_closed_weight/__init__.py": {
+    "sha256": "0b81754e7b94cc422fbc7848856cd639a1ce0255c1c3ae4c3ee881aee0c5239e",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_closed_weight/__init__.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_closed_weight/__init__.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_closed_weight/__init__.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_closed_weight/__init__.py"
+      },
+      {
+        "family": "desktop_original",
+        "file": "src/iar_closed_weight/__init__.py"
+      }
+    ]
+  },
+  "src/iar_closed_weight/gemini_pilot.py": {
+    "sha256": "cb2afa815ad478916a263c9a1fe275d8632e20d764b0486724189d4d34705b81",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_closed_weight/gemini_pilot.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_closed_weight/gemini_pilot.py"
+      },
+      {
+        "family": "desktop_original",
+        "file": "src/iar_closed_weight/gemini_pilot.py"
+      }
+    ]
+  },
+  "src/iar_cqa/__init__.py": {
+    "sha256": "81e3dc21e25474bb46c0e981ab5076f8950edd6040d9e0f335e2bb9ada92b2cf",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_cqa/__init__.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_cqa/__init__.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_cqa/__init__.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_cqa/__init__.py"
+      },
+      {
+        "family": "desktop_original",
+        "file": "src/iar_cqa/__init__.py"
+      }
+    ]
+  },
+  "src/iar_cqa/analyze.py": {
+    "sha256": "93486252d748db3f6e0795f70299138450cc6e8b6581ee2f4d32f0e73fb87ba4",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_cqa/analyze.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_cqa/analyze.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_cqa/analyze.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_cqa/analyze.py"
+      }
+    ]
+  },
+  "src/iar_cqa/analyze_training.py": {
+    "sha256": "cc47c6102d3e264c9083e055c7974a4afa026e4d34c8f5da68ebc0f13550b62e",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_cqa/analyze_training.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_cqa/analyze_training.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_cqa/analyze_training.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_cqa/analyze_training.py"
+      }
+    ]
+  },
+  "src/iar_cqa/data.py": {
+    "sha256": "6b5b17e62a260fa9eaa4a9f253c01ee95dbc8dd93aef7b02fb00a92c5a014e6b",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_cqa/data.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_cqa/data.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_cqa/data.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_cqa/data.py"
+      }
+    ]
+  },
+  "src/iar_cqa/evaluate_full.py": {
+    "sha256": "ec7fbd4da3aae85bfb01b7a891a283f26cddecee9a7e8fc480249c00d2aeb9ca",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_cqa/evaluate_full.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_cqa/evaluate_full.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_cqa/evaluate_full.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_cqa/evaluate_full.py"
+      }
+    ]
+  },
+  "src/iar_cqa/evaluate_short.py": {
+    "sha256": "826330a7fbf568afe3393fef4ac1035dd156f1e2b36e37ad0ed13ef30a24eafe",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_cqa/evaluate_short.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_cqa/evaluate_short.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_cqa/evaluate_short.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_cqa/evaluate_short.py"
+      }
+    ]
+  },
+  "src/iar_cqa/generate.py": {
+    "sha256": "fd0f28116a04586269c2aa6ad4b8144136f7d4b9101a5d4ae452d3ade7698df9",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_cqa/generate.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_cqa/generate.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_cqa/generate.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_cqa/generate.py"
+      }
+    ]
+  },
+  "src/iar_cqa/item4_evaluate.py": {
+    "sha256": "2c2f8ab991f2fa56ca56e67d393fca1e77d3e070725fd47fffe618ce46198e4f",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_cqa/item4_evaluate.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_cqa/item4_evaluate.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_cqa/item4_evaluate.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_cqa/item4_evaluate.py"
+      }
+    ]
+  },
+  "src/iar_cqa/item4_protocol.py": {
+    "sha256": "45f86547dda482975a0f37a1f1d62384f33f8891621f45f61d2537f71e775540",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_cqa/item4_protocol.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_cqa/item4_protocol.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_cqa/item4_protocol.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_cqa/item4_protocol.py"
+      }
+    ]
+  },
+  "src/iar_cqa/item4_train.py": {
+    "sha256": "f481659ce162b6176a0486d2a1e2b610819d0c4596979a3090729ea8ac367a59",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_cqa/item4_train.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_cqa/item4_train.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_cqa/item4_train.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_cqa/item4_train.py"
+      }
+    ]
+  },
+  "src/iar_cqa/judge.py": {
+    "sha256": "b59e3ef97b6764afb4b79194d2dc3cc18b299a0180538913e931ee9ad390ef95",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_cqa/judge.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_cqa/judge.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_cqa/judge.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_cqa/judge.py"
+      }
+    ]
+  },
+  "src/iar_cqa/prompts.py": {
+    "sha256": "5b3fd6a523c1cdf969fb491943cf9f82b6da8466bc287c7225009dc021ca0d3a",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_cqa/prompts.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_cqa/prompts.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_cqa/prompts.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_cqa/prompts.py"
+      },
+      {
+        "family": "desktop_original",
+        "file": "src/iar_cqa/prompts.py"
+      }
+    ]
+  },
+  "src/iar_cqa/scoring.py": {
+    "sha256": "5892ff845bd3605f8056326bc78a7a4ba9b7330150a416110020ac2be685b455",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_cqa/scoring.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_cqa/scoring.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_cqa/scoring.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_cqa/scoring.py"
+      },
+      {
+        "family": "desktop_original",
+        "file": "src/iar_cqa/scoring.py"
+      }
+    ]
+  },
+  "src/iar_cqa/train.py": {
+    "sha256": "ee519422c880eb0ed2272dcc5833ff39f481980d484f79510ed46c6f97cd621b",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_cqa/train.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_cqa/train.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_cqa/train.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_cqa/train.py"
+      }
+    ]
+  },
+  "src/iar_distillation/__init__.py": {
+    "sha256": "df818d39d4ca8debaa857a31f833706de2994109a6632dbf805cd39269f7b413",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_distillation/__init__.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_distillation/__init__.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_distillation/__init__.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_distillation/__init__.py"
+      }
+    ]
+  },
+  "src/iar_distillation/evaluate_offline.py": {
+    "sha256": "19ff41c8becaa22d4abd5b3ae849073e7cc27f3a11956d8b40a7083267cc4e52",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_distillation/evaluate_offline.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_distillation/evaluate_offline.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_distillation/evaluate_offline.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_distillation/evaluate_offline.py"
+      }
+    ]
+  },
+  "src/iar_distillation/parallel_teacher.py": {
+    "sha256": "b67c305aa80580950b9b48d0bc4acc9ea4c13b52be971bb9395f419b708f2e7e",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_distillation/parallel_teacher.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_distillation/parallel_teacher.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_distillation/parallel_teacher.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_distillation/parallel_teacher.py"
+      }
+    ]
+  },
+  "src/iar_distillation/preference_data.py": {
+    "sha256": "68da4af0928754babd4797fa29368ed35eeb33420b4d627c66b49052b1c67555",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_distillation/preference_data.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_distillation/preference_data.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_distillation/preference_data.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_distillation/preference_data.py"
+      }
+    ]
+  },
+  "src/iar_distillation/teacher_data.py": {
+    "sha256": "e2f8c2c520341bd9679cfe0e26738647af56e85f5fff0f431e548de9797d16cd",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_distillation/teacher_data.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_distillation/teacher_data.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_distillation/teacher_data.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_distillation/teacher_data.py"
+      }
+    ]
+  },
+  "src/iar_distillation/train_offline.py": {
+    "sha256": "81a15e38ac7ccb291b40cf6e7fd6f1b44b03466f050d830e9d1a32f82253648d",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_distillation/train_offline.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_distillation/train_offline.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_distillation/train_offline.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_distillation/train_offline.py"
+      }
+    ]
+  },
+  "src/iar_grpo/__init__.py": {
+    "sha256": "766ce4e3d2f714fb4d3e931f50fda5dc6e8a331f60d7645b0d550fbca3c4c97a",
+    "matches": [
+      {
+        "family": "desktop_original",
+        "file": "src/iar_grpo/__init__.py"
+      }
+    ]
+  },
+  "src/iar_grpo/analyze_hpo.py": {
+    "sha256": "16440f2946c0d673ecb6a0ac914bd3eceb41dcaa914e026eed4c1384547921d5",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_grpo/analyze_hpo.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_grpo/analyze_hpo.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_grpo/analyze_hpo.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_grpo/analyze_hpo.py"
+      }
+    ]
+  },
+  "src/iar_grpo/audit_run.py": {
+    "sha256": "36f9527ca0a4ecbb0484969a305f3c4e7bcdcfe9e7306706102f469a80c79608",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_grpo/audit_run.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_grpo/audit_run.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_grpo/audit_run.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_grpo/audit_run.py"
+      }
+    ]
+  },
+  "src/iar_grpo/check_generation.py": {
+    "sha256": "83f193c253e7c362b80c37dd5eb72da4e89717e1d49376a8bb958bb340cdf965",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_grpo/check_generation.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_grpo/check_generation.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_grpo/check_generation.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_grpo/check_generation.py"
+      }
+    ]
+  },
+  "src/iar_grpo/config.py": {
+    "sha256": "e1cf7a0e2d82a3ab307dacfa955fe2a70dc04ae967a41165d2357ea416fa8bd7",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_grpo/config.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_grpo/config.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_grpo/config.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_grpo/config.py"
+      },
+      {
+        "family": "desktop_original",
+        "file": "src/iar_grpo/config.py"
+      }
+    ]
+  },
+  "src/iar_grpo/confirm_hpo.py": {
+    "sha256": "6050dff9866abaa6470ae888b1d365e4a895c44890a123d788a6088274b33303",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_grpo/confirm_hpo.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_grpo/confirm_hpo.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_grpo/confirm_hpo.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_grpo/confirm_hpo.py"
+      }
+    ]
+  },
+  "src/iar_grpo/data.py": {
+    "sha256": "804f73132c9511157caa39657bd99e2d64cfd6ba64ad2e226175db143af7addf",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_grpo/data.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_grpo/data.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_grpo/data.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_grpo/data.py"
+      },
+      {
+        "family": "desktop_original",
+        "file": "src/iar_grpo/data.py"
+      }
+    ]
+  },
+  "src/iar_grpo/evaluate_hpo.py": {
+    "sha256": "57dc5511493eb6ec2c4d9567b53d08d5528d69d8891cba9ef1f05b58a4d1aa21",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_grpo/evaluate_hpo.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_grpo/evaluate_hpo.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_grpo/evaluate_hpo.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_grpo/evaluate_hpo.py"
+      }
+    ]
+  },
+  "src/iar_grpo/evaluate_live_checkpoint.py": {
+    "sha256": "61d956ff026df14f7846cd54e1817dbce509fa79f7c6803d7f9fd7c9de449e67",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_grpo/evaluate_live_checkpoint.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_grpo/evaluate_live_checkpoint.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_grpo/evaluate_live_checkpoint.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_grpo/evaluate_live_checkpoint.py"
+      }
+    ]
+  },
+  "src/iar_grpo/evaluate_pilot.py": {
+    "sha256": "d0cfbeff82bd732d788f16c46e6381bbcf0e33cb1bff4b41d0ac70e07228c417",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_grpo/evaluate_pilot.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_grpo/evaluate_pilot.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_grpo/evaluate_pilot.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_grpo/evaluate_pilot.py"
+      }
+    ]
+  },
+  "src/iar_grpo/hpo.py": {
+    "sha256": "e316dfb3127a198a6eb0db8a621f61759566600cf11ec3af1cbe3de1d382ffb6",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_grpo/hpo.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_grpo/hpo.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_grpo/hpo.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_grpo/hpo.py"
+      }
+    ]
+  },
+  "src/iar_grpo/numerics.py": {
+    "sha256": "900bd87f1f09104df0811ae3652a76db41447d35de7d1d051134efe4cc9210df",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_grpo/numerics.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_grpo/numerics.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_grpo/numerics.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_grpo/numerics.py"
+      },
+      {
+        "family": "desktop_original",
+        "file": "src/iar_grpo/numerics.py"
+      }
+    ]
+  },
+  "src/iar_grpo/plot_confirmation.py": {
+    "sha256": "50df64d5102299e76ab95c80104501a012b9d5b26a678fc6cbbb2eda9718ceaa",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_grpo/plot_confirmation.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_grpo/plot_confirmation.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_grpo/plot_confirmation.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_grpo/plot_confirmation.py"
+      }
+    ]
+  },
+  "src/iar_grpo/plot_hpo.py": {
+    "sha256": "59b3af4f616ddaba414680501e1c6162e3b72ff11af32fdb670a6cf061b26bee",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_grpo/plot_hpo.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_grpo/plot_hpo.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_grpo/plot_hpo.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_grpo/plot_hpo.py"
+      }
+    ]
+  },
+  "src/iar_grpo/plot_model_comparison.py": {
+    "sha256": "b135e1c7ebf72434aa078772e04c9d335c5bcde98031e782a2545f4abd9a82d8",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_grpo/plot_model_comparison.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_grpo/plot_model_comparison.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_grpo/plot_model_comparison.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_grpo/plot_model_comparison.py"
+      }
+    ]
+  },
+  "src/iar_grpo/plot_pilot.py": {
+    "sha256": "df36892bbee322afe44522d85a7cf8c8b5294be041ce681dcdbea966f526ad87",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_grpo/plot_pilot.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_grpo/plot_pilot.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_grpo/plot_pilot.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_grpo/plot_pilot.py"
+      }
+    ]
+  },
+  "src/iar_grpo/preflight.py": {
+    "sha256": "9c8fe86fa5d68cd2e48f17f797bf6a5d3002601dc6ce45da6efd4b5192e7eddf",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_grpo/preflight.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_grpo/preflight.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_grpo/preflight.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_grpo/preflight.py"
+      }
+    ]
+  },
+  "src/iar_grpo/reward.py": {
+    "sha256": "59cda20be4374f180c2e46a1abd25339d8744881a50bed54adf3eff95e8e89a2",
+    "matches": [
+      {
+        "family": "desktop_original",
+        "file": "src/iar_grpo/reward.py"
+      }
+    ]
+  },
+  "src/iar_grpo/run_reward_probe.py": {
+    "sha256": "12c76b3246a6f47bbe8c1bb1b60776b7170cb355c537dc79b6eee0e06f9c7436",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_grpo/run_reward_probe.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_grpo/run_reward_probe.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_grpo/run_reward_probe.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_grpo/run_reward_probe.py"
+      }
+    ]
+  },
+  "src/iar_grpo/train.py": {
+    "sha256": "3b342ad49539dbd8c007cb6a640f3ffab940de7534a2365e0aa1ea08bb17f6a7",
+    "matches": []
+  },
+  "src/iar_grpo/validation_reward.py": {
+    "sha256": "20f7b8f32d5a3a4e200b125a177458e529a6369071900b865ce5fc8b869cdc8d",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_grpo/validation_reward.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_grpo/validation_reward.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_grpo/validation_reward.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_grpo/validation_reward.py"
+      }
+    ]
+  },
+  "src/iar_gsm8k/__init__.py": {
+    "sha256": "f7865cff26afdafd590a7f09a3d7852fb6d33ba449a318c8933793ff3c2e219c",
+    "matches": [
+      {
+        "family": "desktop_original",
+        "file": "src/iar_gsm8k/__init__.py"
+      }
+    ]
+  },
+  "src/iar_gsm8k/analyze.py": {
+    "sha256": "4ce96570a9bcf44147fcea64282543fcb1e58d44dec142c984defb5cedf2c226",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_gsm8k/analyze.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_gsm8k/analyze.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_gsm8k/analyze.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_gsm8k/analyze.py"
+      }
+    ]
+  },
+  "src/iar_gsm8k/analyze_training.py": {
+    "sha256": "86f281ddd91eca810f6be64bd42473534e789c6862c7cef4a599bd6f6fd1cb0a",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_gsm8k/analyze_training.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_gsm8k/analyze_training.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_gsm8k/analyze_training.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_gsm8k/analyze_training.py"
+      }
+    ]
+  },
+  "src/iar_gsm8k/calibrate_endpoint.py": {
+    "sha256": "95270221f49352be92084bc78c0da0256432c0f67c2536083780cb113a9f8cd7",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_gsm8k/calibrate_endpoint.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_gsm8k/calibrate_endpoint.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_gsm8k/calibrate_endpoint.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_gsm8k/calibrate_endpoint.py"
+      }
+    ]
+  },
+  "src/iar_gsm8k/data.py": {
+    "sha256": "430d10fcf189ec8d8a59249bbe48aa67ebd0f9af9d1e1717d46582c7e218f881",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_gsm8k/data.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_gsm8k/data.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_gsm8k/data.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_gsm8k/data.py"
+      }
+    ]
+  },
+  "src/iar_gsm8k/evaluate_discriminator.py": {
+    "sha256": "923bd79f09d6d1a3f177819f7b1e5538d0336b4d39515f235f8e247209ef0844",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_gsm8k/evaluate_discriminator.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_gsm8k/evaluate_discriminator.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_gsm8k/evaluate_discriminator.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_gsm8k/evaluate_discriminator.py"
+      }
+    ]
+  },
+  "src/iar_gsm8k/evaluate_official.py": {
+    "sha256": "ef7d2194d612792c5ad60b8942556d212f55a1c124f2e70c2573781c39ab2209",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_gsm8k/evaluate_official.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_gsm8k/evaluate_official.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_gsm8k/evaluate_official.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_gsm8k/evaluate_official.py"
+      }
+    ]
+  },
+  "src/iar_gsm8k/evaluate_short.py": {
+    "sha256": "638f94839f008cc6b8c1b220d3b8bacbb0529891269901a591a88a7008d838a0",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_gsm8k/evaluate_short.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_gsm8k/evaluate_short.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_gsm8k/evaluate_short.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_gsm8k/evaluate_short.py"
+      }
+    ]
+  },
+  "src/iar_gsm8k/generate.py": {
+    "sha256": "2facb9c1660e1e6b0b2239f4a351b965376b0f479089d9f7a2234f7cf757d5de",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_gsm8k/generate.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_gsm8k/generate.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_gsm8k/generate.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_gsm8k/generate.py"
+      }
+    ]
+  },
+  "src/iar_gsm8k/initialize.py": {
+    "sha256": "bb419ae0a1d16d189dc31b369360dbe70f76c6b19c6f0e8109221ec19a219f0f",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_gsm8k/initialize.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_gsm8k/initialize.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_gsm8k/initialize.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_gsm8k/initialize.py"
+      }
+    ]
+  },
+  "src/iar_gsm8k/judge.py": {
+    "sha256": "c5ebceeebcc18145d37c89b087754f01bb7b0854b7840873a6d29a345d8accf9",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_gsm8k/judge.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_gsm8k/judge.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_gsm8k/judge.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_gsm8k/judge.py"
+      }
+    ]
+  },
+  "src/iar_gsm8k/prompts.py": {
+    "sha256": "181815fead783b84a8820839feea59804e6df9c58ee1d70f1f1cc48be256a964",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_gsm8k/prompts.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_gsm8k/prompts.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_gsm8k/prompts.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_gsm8k/prompts.py"
+      },
+      {
+        "family": "desktop_original",
+        "file": "src/iar_gsm8k/prompts.py"
+      }
+    ]
+  },
+  "src/iar_gsm8k/record_jobs.py": {
+    "sha256": "30994e8ffc88c2c3e7647809ba61eab02e4b2c13aec1fb1876d6ea37b42cab01",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_gsm8k/record_jobs.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_gsm8k/record_jobs.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_gsm8k/record_jobs.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_gsm8k/record_jobs.py"
+      }
+    ]
+  },
+  "src/iar_gsm8k/repeatability.py": {
+    "sha256": "b9b5d8e5b3ee063605080afa2435ba832781e2e500f62f26d64bb38cb6697e63",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_gsm8k/repeatability.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_gsm8k/repeatability.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_gsm8k/repeatability.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_gsm8k/repeatability.py"
+      }
+    ]
+  },
+  "src/iar_gsm8k/scoring.py": {
+    "sha256": "7e8aeda335c0fd8f1c2939a80dcb1d9648b2281079567b85c3c6f62722dcb9b3",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_gsm8k/scoring.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_gsm8k/scoring.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_gsm8k/scoring.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_gsm8k/scoring.py"
+      },
+      {
+        "family": "desktop_original",
+        "file": "src/iar_gsm8k/scoring.py"
+      }
+    ]
+  },
+  "src/iar_gsm8k/screen_evaluate.py": {
+    "sha256": "dfa75b9acc7e5ba6c72fce169e45d4d3527729ad966a6389ba671419206497fc",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_gsm8k/screen_evaluate.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_gsm8k/screen_evaluate.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_gsm8k/screen_evaluate.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_gsm8k/screen_evaluate.py"
+      }
+    ]
+  },
+  "src/iar_gsm8k/screen_protocol.py": {
+    "sha256": "8247378e5c9b4fd480762ef557ea7b2feb1c25fd56f425c39b0e3d1c0627f6d5",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_gsm8k/screen_protocol.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_gsm8k/screen_protocol.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_gsm8k/screen_protocol.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_gsm8k/screen_protocol.py"
+      }
+    ]
+  },
+  "src/iar_gsm8k/screen_train.py": {
+    "sha256": "f4cb70a1fae7aeb9cd0dc1ad3fdd4c0036914172fc25ad07028430fac73b79a9",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_gsm8k/screen_train.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_gsm8k/screen_train.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_gsm8k/screen_train.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_gsm8k/screen_train.py"
+      }
+    ]
+  },
+  "src/iar_gsm8k/shortcuts.py": {
+    "sha256": "f13b0d25c9419a43971ca85e68ff75c58e3b6943e4b50abd3332acf6f8daf9bd",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_gsm8k/shortcuts.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_gsm8k/shortcuts.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_gsm8k/shortcuts.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_gsm8k/shortcuts.py"
+      }
+    ]
+  },
+  "src/iar_gsm8k/train.py": {
+    "sha256": "89497d3d4df52d17073a8d8858e161519bd9dea0a0e612f7f288f4637575cefc",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_gsm8k/train.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_gsm8k/train.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_gsm8k/train.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_gsm8k/train.py"
+      }
+    ]
+  },
+  "src/iar_ifbench/__init__.py": {
+    "sha256": "ac7b128438471b95775a8400586f3f99ee78dcf25b4d1b819368a6078cd507f3",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_ifbench/__init__.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_ifbench/__init__.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_ifbench/__init__.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_ifbench/__init__.py"
+      }
+    ]
+  },
+  "src/iar_ifbench/data.py": {
+    "sha256": "d65ead0f634a72abfd5f0066d9125aa551ac6d29348f73ce84882f88d0e450df",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_ifbench/data.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_ifbench/data.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_ifbench/data.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_ifbench/data.py"
+      }
+    ]
+  },
+  "src/iar_ifbench/evaluate_validation.py": {
+    "sha256": "3f62d629ef17c1eb354c95797df537d68e829861e88e817842d4262be23934e7",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_ifbench/evaluate_validation.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_ifbench/evaluate_validation.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_ifbench/evaluate_validation.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_ifbench/evaluate_validation.py"
+      }
+    ]
+  },
+  "src/iar_ifbench/official_ifeval_old.py": {
+    "sha256": "59a8e8fbfdc8f64433726e9c1dc5d59bac4e3b2de9c9ee0c6f35c695ce4685b4",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_ifbench/official_ifeval_old.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_ifbench/official_ifeval_old.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_ifbench/official_ifeval_old.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_ifbench/official_ifeval_old.py"
+      }
+    ]
+  },
+  "src/iar_ifbench/prompts.py": {
+    "sha256": "8c6d6d8dbfd854e46fc4198dd09d873afe19936d24ab87f343aa70dbd8b1f2af",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_ifbench/prompts.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_ifbench/prompts.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_ifbench/prompts.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_ifbench/prompts.py"
+      }
+    ]
+  },
+  "src/iar_ifbench/screen_evaluate.py": {
+    "sha256": "4ac74ccc4a39d617d6b2c960385fcb6bf2290486889f20b928b328cae9bccd3d",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_ifbench/screen_evaluate.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_ifbench/screen_evaluate.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_ifbench/screen_evaluate.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_ifbench/screen_evaluate.py"
+      }
+    ]
+  },
+  "src/iar_ifbench/screen_protocol.py": {
+    "sha256": "fbfcc31a815905419dac14bc5af91f9c113e77509808079d29ac9ad2b7b91a18",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_ifbench/screen_protocol.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_ifbench/screen_protocol.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_ifbench/screen_protocol.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_ifbench/screen_protocol.py"
+      }
+    ]
+  },
+  "src/iar_ifbench/train.py": {
+    "sha256": "b14d3365702ab589d87775efdb8c258a7f97c577ba77b0f7effec9bd232f21f4",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_ifbench/train.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_ifbench/train.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_ifbench/train.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_ifbench/train.py"
+      }
+    ]
+  },
+  "src/iar_mbpp/__init__.py": {
+    "sha256": "8f0cf4546e81217c94f08d309f70952d663f65051f3ae1adb1d5e34ded59365d",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_mbpp/__init__.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_mbpp/__init__.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_mbpp/__init__.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_mbpp/__init__.py"
+      }
+    ]
+  },
+  "src/iar_mbpp/data.py": {
+    "sha256": "a7da6b7bf1ca989fba6b95d9348a66a7767afb8770d491847e400b7a37780582",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_mbpp/data.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_mbpp/data.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_mbpp/data.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_mbpp/data.py"
+      }
+    ]
+  },
+  "src/iar_mbpp/screen_evaluate.py": {
+    "sha256": "98a90c22eb0975b7139324e54cbd4d75c5c81eedc368e7c1bb0579f9549834be",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_mbpp/screen_evaluate.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_mbpp/screen_evaluate.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_mbpp/screen_evaluate.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_mbpp/screen_evaluate.py"
+      }
+    ]
+  },
+  "src/iar_mbpp/screen_protocol.py": {
+    "sha256": "bbe1f7066264643b92ec957ba9d18946a74e598636c4ac91ffaaf94f33738516",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_mbpp/screen_protocol.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_mbpp/screen_protocol.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_mbpp/screen_protocol.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_mbpp/screen_protocol.py"
+      }
+    ]
+  },
+  "src/iar_mbpp/train.py": {
+    "sha256": "f9989c22a19e871e8b6918745eca002aafc9a66ca42470f1ecd8b158f21af893",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_mbpp/train.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_mbpp/train.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_mbpp/train.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_mbpp/train.py"
+      }
+    ]
+  },
+  "src/iar_phase0/__init__.py": {
+    "sha256": "d852fb0d52f3d55b0f930718036dfdd87df70f2b07083a8b7d6ec359135df136",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_phase0/__init__.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_phase0/__init__.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_phase0/__init__.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_phase0/__init__.py"
+      },
+      {
+        "family": "desktop_original",
+        "file": "src/iar_phase0/__init__.py"
+      }
+    ]
+  },
+  "src/iar_phase0/check_openrouter.py": {
+    "sha256": "77099ae59520cc78a624d1009e5100eeb7bcdaad1c10d23bbb6c742c614f5b1a",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_phase0/check_openrouter.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_phase0/check_openrouter.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_phase0/check_openrouter.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_phase0/check_openrouter.py"
+      }
+    ]
+  },
+  "src/iar_phase0/config.py": {
+    "sha256": "10f7bdfc39563bdc5be7231c9bd2bb571dfbd50438309ac29bd94486b38887c4",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_phase0/config.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_phase0/config.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_phase0/config.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_phase0/config.py"
+      },
+      {
+        "family": "desktop_original",
+        "file": "src/iar_phase0/config.py"
+      }
+    ]
+  },
+  "src/iar_phase0/data.py": {
+    "sha256": "c1b2b5bbb0e64e6e9163618f1e464b25eb9f2ab7f6e7f1cb7767e55efc0d5ab5",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_phase0/data.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_phase0/data.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_phase0/data.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_phase0/data.py"
+      },
+      {
+        "family": "desktop_original",
+        "file": "src/iar_phase0/data.py"
+      }
+    ]
+  },
+  "src/iar_phase0/discriminator.py": {
+    "sha256": "1fb2c0a8a55143afa7c132f9fa032ab19a024979b9241f1a52443a7f8dac4bda",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_phase0/discriminator.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_phase0/discriminator.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_phase0/discriminator.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_phase0/discriminator.py"
+      }
+    ]
+  },
+  "src/iar_phase0/download_actor.py": {
+    "sha256": "ec18c749967611702648fb7a87d026336a59b229fd33ecab9ff58ea79b6c9b23",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_phase0/download_actor.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_phase0/download_actor.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_phase0/download_actor.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_phase0/download_actor.py"
+      }
+    ]
+  },
+  "src/iar_phase0/download_models.py": {
+    "sha256": "7496078942aa1e985d05d5a10387316a17448082df643abbc18e17bbfbfa7da0",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_phase0/download_models.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_phase0/download_models.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_phase0/download_models.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_phase0/download_models.py"
+      }
+    ]
+  },
+  "src/iar_phase0/env.py": {
+    "sha256": "364ff581732cf8d7b53754d9c91c6f61e510f1c8fbf66b61e0e58ba868044306",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_phase0/env.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_phase0/env.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_phase0/env.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_phase0/env.py"
+      },
+      {
+        "family": "desktop_original",
+        "file": "src/iar_phase0/env.py"
+      }
+    ]
+  },
+  "src/iar_phase0/evaluate.py": {
+    "sha256": "a5c5e5094351de059f8c70ad97e7f8c745d69867b4b039b0f2e954877c4dec79",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_phase0/evaluate.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_phase0/evaluate.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_phase0/evaluate.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_phase0/evaluate.py"
+      }
+    ]
+  },
+  "src/iar_phase0/generator.py": {
+    "sha256": "12e2a329bdaee2c8c3c1d1660d9f1d6de65615cacdca3127c8633f0f5a7ab6aa",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_phase0/generator.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_phase0/generator.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_phase0/generator.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_phase0/generator.py"
+      },
+      {
+        "family": "desktop_original",
+        "file": "src/iar_phase0/generator.py"
+      }
+    ]
+  },
+  "src/iar_phase0/metrics.py": {
+    "sha256": "8427624506a4047449fcb39d6074923b6868d6cda698dbf631383d9d90193f90",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_phase0/metrics.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_phase0/metrics.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_phase0/metrics.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_phase0/metrics.py"
+      }
+    ]
+  },
+  "src/iar_phase0/openrouter.py": {
+    "sha256": "ff9bbd18bd5cb6bc3f45486a7db022eeff58a36ab5c37db3817af8dedea374bc",
+    "matches": [
+      {
+        "family": "desktop_original",
+        "file": "src/iar_phase0/openrouter.py"
+      }
+    ]
+  },
+  "src/iar_phase0/parameters.py": {
+    "sha256": "90820d8e10fd426ffe7ecbb6c25a31a70692ca94368fa855e2ee144ca9bc1331",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_phase0/parameters.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_phase0/parameters.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_phase0/parameters.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_phase0/parameters.py"
+      },
+      {
+        "family": "desktop_original",
+        "file": "src/iar_phase0/parameters.py"
+      }
+    ]
+  },
+  "src/iar_phase0/prompts.py": {
+    "sha256": "2757cb3c510f138aa447a2a98a244ee4e071276dd56c7a43881d69c00a7ec9f6",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_phase0/prompts.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_phase0/prompts.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_phase0/prompts.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_phase0/prompts.py"
+      },
+      {
+        "family": "desktop_original",
+        "file": "src/iar_phase0/prompts.py"
+      }
+    ]
+  },
+  "src/iar_phase0/run_forced_likelihood.py": {
+    "sha256": "b30e8f1c2293bb3e0a68a11a47e0f10cb9b060d7ac9825d0603b3347f9bde202",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_phase0/run_forced_likelihood.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_phase0/run_forced_likelihood.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_phase0/run_forced_likelihood.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_phase0/run_forced_likelihood.py"
+      }
+    ]
+  },
+  "src/iar_phase0/run_gpt_oss_severity_probe.py": {
+    "sha256": "2272302b5895873bccee6ad368af4aa07ab3ac92ab14889437685f8a092bfc93",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_phase0/run_gpt_oss_severity_probe.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_phase0/run_gpt_oss_severity_probe.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_phase0/run_gpt_oss_severity_probe.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_phase0/run_gpt_oss_severity_probe.py"
+      }
+    ]
+  },
+  "src/iar_phase0/run_phase0.py": {
+    "sha256": "07a8fabe58e9f87f6a653554c58e4f791b75a7f722bebb236917fce846b60257",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_phase0/run_phase0.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_phase0/run_phase0.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_phase0/run_phase0.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_phase0/run_phase0.py"
+      }
+    ]
+  },
+  "src/iar_phase0/run_pointwise_self_attribution.py": {
+    "sha256": "b043811a920170e5d126536fc8b24164b99f00f365583566f923e246c3546483",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_phase0/run_pointwise_self_attribution.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_phase0/run_pointwise_self_attribution.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_phase0/run_pointwise_self_attribution.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_phase0/run_pointwise_self_attribution.py"
+      }
+    ]
+  },
+  "src/iar_phase0/run_reward_prompt_rejudge.py": {
+    "sha256": "1ea3f7ffbd1399f9cb14bab602a6d7311973dd7e575892aaf2c942929713348a",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_phase0/run_reward_prompt_rejudge.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_phase0/run_reward_prompt_rejudge.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_phase0/run_reward_prompt_rejudge.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_phase0/run_reward_prompt_rejudge.py"
+      }
+    ]
+  },
+  "src/iar_repro/__init__.py": {
+    "sha256": "24d404fe9260dd26301ae3b5cb6718d9c98dd818b55b9f0329a8bb90c0bb54f9",
+    "matches": []
+  },
+  "src/iar_repro/__main__.py": {
+    "sha256": "7e571eccb239eca13af189627dd3677e0a2b7106f24598d487729977cae5b3cb",
+    "matches": []
+  },
+  "src/iar_repro/analysis.py": {
+    "sha256": "313c9bf6561c00bd068ce42b006c1841d07f0c9a37da1391cd94a6e42f1061a3",
+    "matches": []
+  },
+  "src/iar_repro/causal.py": {
+    "sha256": "9ec4e7d761e074ada030e0c092b8a3eecb01e0d43159bac103e1108825e09e3c",
+    "matches": []
+  },
+  "src/iar_repro/configure.py": {
+    "sha256": "08cb08e9e6cbbb3e338e70d4baa6d534a9e5e28e27a8f5b2f4bd9c19a8c4fe3a",
+    "matches": []
+  },
+  "src/iar_repro/figures.py": {
+    "sha256": "4acd4a3a234e89cfaf2d72ce076873c40b554c6789ffc6f155462f72075b955b",
+    "matches": []
+  },
+  "src/iar_repro/pairwise.py": {
+    "sha256": "545414917c6dafd2e07d1f5a780c7fb0919b77d70300f1e8fc6d64f80910792a",
+    "matches": []
+  },
+  "src/iar_repro/paths.py": {
+    "sha256": "ffa28e432fb7d98007f97570537eccd5ba9a51d94cc3b9029dc14a4ba83524bb",
+    "matches": []
+  },
+  "src/iar_repro/pilot.py": {
+    "sha256": "14663e91d2176a1a3679f03eda10e091a2d8964583364963bbbd8a1549feb7e3",
+    "matches": []
+  },
+  "src/iar_repro/probes.py": {
+    "sha256": "0edddf8fb00ea2189b8ba1aa6083fb9a307fc222746ab1f76f55da29aaa40811",
+    "matches": []
+  },
+  "src/iar_repro/records.py": {
+    "sha256": "9e629396daa9c59415945611ed3f6fa5c3db7276b64404b3340027b29a959c54",
+    "matches": []
+  },
+  "src/iar_repro/screen.py": {
+    "sha256": "6aab7bbc17dd9a3ee8a1d27af6d08c7ba50b9ea589a7350f4270ad673c2e7ee8",
+    "matches": []
+  },
+  "src/iar_repro/smoke.py": {
+    "sha256": "f9c8e552ba4f0d326bb541d51768dae54a67b37030918db351f53c1b143f1233",
+    "matches": []
+  },
+  "src/iar_repro/tables.py": {
+    "sha256": "b0219d5e22568dc74f029c0b8d03e17da6ac1fe255d32ef43664e0f8a4ccae36",
+    "matches": []
+  },
+  "src/iar_repro/teacher.py": {
+    "sha256": "53e1d5bcc235e8b28725fcf0d5fde2134382a6c9410a2bd6540a2f1374885e9c",
+    "matches": []
+  },
+  "src/iar_repro/training.py": {
+    "sha256": "c88f8403e3ddf3cb5ac88a796ae7e6b130c97196374120c83dd52428095c82f2",
+    "matches": []
+  },
+  "src/iar_repro/verify.py": {
+    "sha256": "8a9bd1f93ee3a48e0b252f70fab14995d529443b307f07f3b9d748ff43c892cb",
+    "matches": []
+  },
+  "src/iar_spider/__init__.py": {
+    "sha256": "412818bc72d8923da6876d8a76785487c65f2cca1912d7f739a2df2d5569766b",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_spider/__init__.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_spider/__init__.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_spider/__init__.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_spider/__init__.py"
+      },
+      {
+        "family": "desktop_original",
+        "file": "src/iar_spider/__init__.py"
+      }
+    ]
+  },
+  "src/iar_spider/data.py": {
+    "sha256": "871b33f42a415cba5f0ecc2b99eb0e8f07cfee7837594c16958bfaa077459878",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_spider/data.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_spider/data.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_spider/data.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_spider/data.py"
+      },
+      {
+        "family": "desktop_original",
+        "file": "src/iar_spider/data.py"
+      }
+    ]
+  },
+  "src/iar_spider/evaluate_validation.py": {
+    "sha256": "b7f7ee7b29c09d27d5a2c5036f83741b8deba52ffea8b493160da69741d66792",
+    "matches": []
+  },
+  "src/iar_spider/official_test_suite.py": {
+    "sha256": "79a3b213e76c5f2107ca12efe1224ad4824ed775f8b1b9c5de9633d008e00bb2",
+    "matches": []
+  },
+  "src/iar_spider/prompts.py": {
+    "sha256": "982c00d94d343933267cdfed52218e7b7523bed430683ae1ff17eb597772596a",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_spider/prompts.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_spider/prompts.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_spider/prompts.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_spider/prompts.py"
+      },
+      {
+        "family": "desktop_original",
+        "file": "src/iar_spider/prompts.py"
+      }
+    ]
+  },
+  "src/iar_spider/screen_evaluate.py": {
+    "sha256": "a633ea432baf729a231bc4e83fb7466f85ddfe8958b394f579920c961897e73b",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_spider/screen_evaluate.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_spider/screen_evaluate.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_spider/screen_evaluate.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_spider/screen_evaluate.py"
+      }
+    ]
+  },
+  "src/iar_spider/screen_protocol.py": {
+    "sha256": "83a2f1b16a09b2e5a18e84d432ebfcf5b2d08f1709d7d50e574c6bb1ebd1cedd",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_spider/screen_protocol.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_spider/screen_protocol.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_spider/screen_protocol.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_spider/screen_protocol.py"
+      }
+    ]
+  },
+  "src/iar_spider/train.py": {
+    "sha256": "1c531fb04fbf205600a896c10a4356511bf3cbac41b9a401d5040e985d964770",
+    "matches": [
+      {
+        "family": "k10_multidomain_v2",
+        "file": "src/iar_spider/train.py"
+      },
+      {
+        "family": "identity_seed42",
+        "file": "src/iar_spider/train.py"
+      },
+      {
+        "family": "k10_kodcode_v13",
+        "file": "src/iar_spider/train.py"
+      },
+      {
+        "family": "causal_v93",
+        "file": "src/iar_spider/train.py"
+      }
+    ]
+  }
+}

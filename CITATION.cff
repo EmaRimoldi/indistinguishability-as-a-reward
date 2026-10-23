@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "Please cite the associated paper when using this experiment package."
+type: software
+title: "Indistinguishability as a Reward: reproduction package"
+version: 0.1.0
+date-released: 2026-10-22
+repository-code: https://github.com/EmaRimoldi/indistinguishability-as-a-reward
+authors:
+  - family-names: Rimoldi
+    given-names: Emanuele
+  - family-names: Neumarker
+    given-names: Riccardo
+  - family-names: Poggio
+    given-names: Tomaso
+  - family-names: Mitropolsky
+    given-names: Daniel

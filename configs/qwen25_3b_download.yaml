@@ -1,0 +1,14 @@
+project:
+  name: indistinguishability-as-a-reward
+  root: /home/erimoldi/projects/indistinguishability-as-a-reward
+  seed: 17
+
+paths:
+  hf_cache: models/cache/huggingface
+
+generator:
+  model_id: Qwen/Qwen2.5-3B-Instruct
+  local_files_only: false
+
+artifacts:
+  actor_snapshot_manifest: experiments/mbpp_qwen25_3b_v1/provenance/actor_snapshot.json

@@ -1,0 +1,48 @@
+project:
+  name: indistinguishability-as-a-reward
+  root: /home/erimoldi/projects/indistinguishability-as-a-reward
+  seed: 23
+
+paths:
+  data_cache: data/cache
+  hf_cache: models/cache/huggingface
+  experiments: experiments/mbpp_coder_control_v1/phase0
+  openrouter_env: models/openrouter/.env
+  model_manifest: models/manifests/models.yaml
+
+dataset:
+  name: google-research-datasets/mbpp
+  config_name: null
+  prompt_style: mbpp_google_original
+  fewshot_split: prompt
+  fewshot_count: 10
+
+discriminator:
+  role: B
+  provider: openrouter
+  model_id: deepseek/deepseek-v4-flash
+  judge_max_tokens: 1
+  temperature: 0
+  logprobs: true
+  top_logprobs: 5
+  strict_logprobs: true
+  request_overrides:
+    reasoning:
+      enabled: false
+  provider_routing:
+    require_parameters: true
+    allow_fallbacks: false
+
+pointwise_self_attribution:
+  run_name: coder_pointwise_self_attr_plain_test100
+  target_model_name: DeepSeek V4 Flash
+  split: test
+  task_count: 100
+  own_count: 50
+  non_own_mix:
+    plain: 50
+    imitation: 0
+  source_runs:
+    b_own_glob: coder_b_own_test100_*
+    plain_glob: coder_plain_test_*
+    imitation_glob: coder_imitation_test_*

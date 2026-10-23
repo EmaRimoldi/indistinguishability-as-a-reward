@@ -1,0 +1,98 @@
+project:
+  root: /home/erimoldi/projects/indistinguishability-as-a-reward
+  seed: 23
+
+paths:
+  split_dir: data/gsm8k/main_seed23
+  hf_cache: models/cache/huggingface
+  experiments: experiments/gsm8k_deepseek_v1/training/short
+  checkpoints: models/checkpoints/gsm8k_deepseek_v1/short
+  openrouter_env: models/openrouter/.env
+
+dataset:
+  id: openai/gsm8k
+  config: main
+  revision: 740312add88f781978c0658806c59bc2815b9866
+  source_file: short_train.jsonl
+  selection: frozen_split_order
+  prompt_count: 100
+
+trial:
+  run_name: gsm8k_grpo_short_seed23
+  expected_reward_calls: 400
+
+actor:
+  model_id: Qwen/Qwen2.5-1.5B-Instruct
+  local_files_only: true
+  lora:
+    r: 32
+    alpha: 32
+    dropout: 0.05
+    target_modules: [q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj, down_proj]
+
+discriminator:
+  model_id: deepseek/deepseek-v4-flash
+  target_model_name: DeepSeek V4 Flash
+  attribution_prompt_version: gsm8k-pointwise-self-attribution-v1-no-system
+  provider_routing:
+    order: [DigitalOcean]
+    require_parameters: true
+    allow_fallbacks: false
+  request_overrides:
+    reasoning:
+      enabled: false
+  temperature: 0
+  judge_max_tokens: 1
+  top_logprobs: 5
+  strict_logprobs: true
+
+reward:
+  type: pointwise_self_attribution_logprob
+  value: absolute_logp_1
+  max_reward_calls: 400
+  max_http_requests: 4800
+  max_attempts_per_call: 12
+  max_concurrency: 1
+  timeout_seconds: 120
+  minimum_request_interval_seconds: 1.0
+  max_retry_wait_seconds: 120
+
+training:
+  algorithm: GRPO
+  world_size: 1
+  num_epochs: 1
+  num_generations: 4
+  generation_batch_size: 40
+  per_device_train_batch_size: 4
+  gradient_accumulation_steps: 1
+  max_steps: 100
+  max_prompt_tokens: 1024
+  max_completion_length: 768
+  max_completion_length_selection: audit_p99_plus_32_rounded_to_32_capped_at_768
+  temperature: 0.6
+  top_p: 1.0
+  learning_rate: 3.0e-5
+  warmup_ratio: 0.0
+  lr_scheduler_type: constant
+  gradient_checkpointing: true
+  mask_truncated_completions: true
+  beta: 0.003
+  loss_type: dr_grpo
+  scale_rewards: group
+  num_completions_to_print: 0
+  save_strategy: steps
+  save_steps: 50
+  save_total_limit: null
+
+evaluation:
+  checkpoints: [0, 50, 100]
+  validation_count: 300
+  batch_size: 8
+  max_new_tokens: 768
+  temperature: 0
+  top_p: 1.0
+  paired_lcb_z: 1.6448536269514722
+  maximum_accuracy_drop: 0.02
+  max_reward_attempts: 12
+  max_concurrency: 1
+  timeout_seconds: 120

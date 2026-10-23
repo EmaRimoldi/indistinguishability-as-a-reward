@@ -1,0 +1,66 @@
+schema_version: 1
+protocol: iar-judge-sanity-cqa-confirm-v3-binary-contract
+seed: 23
+endpoint:
+  model_id: deepseek/deepseek-v4-flash
+  expected_provider: StreamLake
+  key_names:
+  - OPENROUTER_API_KEY
+  - OPENROUTER_API_KEY_2
+  - OPENROUTER_API_KEY_3
+  concurrency_per_key: 1
+  provider_routing:
+    order:
+    - StreamLake
+    require_parameters: true
+    allow_fallbacks: false
+  request_overrides:
+    reasoning:
+      enabled: false
+transport:
+  timeout_seconds: 120
+  max_attempts_per_call: 3
+  max_retry_wait_seconds: 60
+teacher_generation:
+  expected_per_domain: 100
+  temperature: 0
+  max_tokens: 768
+judging:
+  expected_per_domain: 300
+  temperature: 0
+  max_tokens: 1
+  top_logprobs: 5
+gate_thresholds:
+  binary_label_mass_floor: 0.8
+  binary_label_mass_target: 0.9
+  minimum_target_coverage: 0.99
+  minimum_emitted_argmax_consistency: 0.95
+  minimum_auc: 0.6
+  minimum_mean_p_own_gap: 0.05
+  bootstrap_replicates: 10000
+paths:
+  spider_tables_json: /orcd/pool/008/erimoldi/iar/datasets/spider-release-1403EGqz/spider_data/tables.json
+  global_lock_dir: /orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/00_campaign_control/locks/openrouter
+  teacher_lane_root: /orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/03_judge_sanity/runs/teacher_generation_attempt001
+  judge_lane_root: /orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/03_judge_sanity/runs/judgments_cqa_confirm_attempt004
+  teacher_collection: /orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/03_judge_sanity/results/teacher_generation_attempt001.json
+  judge_gate: /orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/03_judge_sanity/results/judge_sanity_cqa_confirm_gate_v4.json
+domains:
+  commonsenseqa:
+    split_file: /orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/01_data_protocol_runtime_gates/datasets/commonsenseqa/frozen_historical_seed23/reward_audit.jsonl
+    candidate_file: /orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/03_judge_sanity/domains/commonsenseqa/runs/probe100_a0_imitation_attempt001/candidates.jsonl
+    run_dir: /orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/03_judge_sanity/domains/commonsenseqa/runs/judge_sanity_attempt001
+  gsm8k:
+    split_file: /orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/01_data_protocol_runtime_gates/datasets/gsm8k/frozen_historical_seed23/reward_audit.jsonl
+    candidate_file: /orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/03_judge_sanity/domains/gsm8k/runs/probe100_a0_imitation_attempt001/candidates.jsonl
+    run_dir: /orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/03_judge_sanity/domains/gsm8k/runs/judge_sanity_attempt001
+  kodcode:
+    split_file: /orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/01_data_protocol_runtime_gates/datasets/kodcode/frozen_seed23_v1/probe100.jsonl
+    candidate_file: /orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/03_judge_sanity/domains/kodcode/runs/probe100_a0_imitation_attempt001/candidates.jsonl
+    run_dir: /orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/03_judge_sanity/domains/kodcode/runs/judge_sanity_attempt001
+  spider:
+    split_file: /orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/01_data_protocol_runtime_gates/datasets/spider/frozen_seed23_v1/probe100.jsonl
+    candidate_file: /orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/03_judge_sanity/domains/spider/runs/probe100_a0_imitation_attempt001/candidates.jsonl
+    run_dir: /orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/03_judge_sanity/domains/spider/runs/judge_sanity_attempt001
+enabled_domains:
+- commonsenseqa

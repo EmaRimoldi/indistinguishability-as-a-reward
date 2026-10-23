@@ -1,0 +1,82 @@
+project:
+  root: /home/erimoldi/projects/indistinguishability-as-a-reward
+  seed: 23
+
+paths:
+  split_dir: data/gsm8k/main_seed23
+  hf_cache: models/cache/huggingface
+  openrouter_env: models/openrouter/.env
+
+dataset:
+  id: openai/gsm8k
+  config: main
+  revision: 740312add88f781978c0658806c59bc2815b9866
+  audit_count: 100
+  short_train_count: 100
+  official_train_count: 1000
+  validation_count: 300
+  official_test_count: 1319
+
+actor:
+  model_id: Qwen/Qwen2.5-1.5B-Instruct
+  local_files_only: true
+  dtype: bfloat16
+  device_map: auto
+  baseline:
+    max_new_tokens: 512
+    temperature: 0.2
+    top_p: 0.95
+  probe:
+    num_generations: 4
+    max_new_tokens: 512
+    length_reaudit_caps: [768, 1024]
+    temperature: 0.6
+    top_p: 1.0
+
+discriminator:
+  model_id: deepseek/deepseek-v4-flash
+  target_model_name: DeepSeek V4 Flash
+  provider_routing:
+    order: [DigitalOcean]
+    require_parameters: true
+    allow_fallbacks: false
+  request_overrides:
+    reasoning:
+      enabled: false
+  own_generation:
+    max_tokens: 512
+    temperature: 0
+    top_p: 1.0
+  judgment:
+    max_tokens: 1
+    temperature: 0
+    logprobs: true
+    top_logprobs: 5
+    strict_logprobs: true
+  transport:
+    max_attempts: 12
+    max_retry_wait_seconds: 120
+    max_concurrency: 2
+    inter_request_delay_seconds: 1.0
+
+reward:
+  value: absolute_logp_1
+
+shortcut_audit:
+  pairs_per_transform: 25
+  judgments_per_state: 4
+
+gates:
+  paired_lcb_z: 1.6448536269514722
+  minimum_b_minus_a_accuracy: 0.05
+  minimum_attribution_auc: 0.70
+  minimum_groups_with_reward_variation: 80
+  minimum_correct_only_reward_std: 0.01
+  maximum_correctness_auc: 0.99
+  maximum_absolute_within_task_surface_correlation: 0.40
+  maximum_absolute_paired_shortcut_effect: 0.10
+  minimum_single_binary_token_rate: 0.99
+  minimum_reward_repeatability_icc: 0.80
+  maximum_sample_probability_calibration_gap: 0.10
+  expected_model: deepseek/deepseek-v4-flash
+  expected_provider: DigitalOcean

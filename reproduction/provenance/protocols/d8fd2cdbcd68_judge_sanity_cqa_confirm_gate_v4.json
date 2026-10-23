@@ -1,0 +1,22 @@
+{
+  "enabled_domains": [
+    "commonsenseqa"
+  ],
+  "models": [
+    "deepseek/deepseek-v4-flash"
+  ],
+  "official_test_accessed": false,
+  "protocol": "iar-judge-sanity-cqa-confirm-v3-binary-contract",
+  "providers": [
+    "StreamLake"
+  ],
+  "thresholds": {
+    "binary_label_mass_floor": 0.8,
+    "binary_label_mass_target": 0.9,
+    "bootstrap_replicates": 10000,
+    "minimum_auc": 0.6,
+    "minimum_emitted_argmax_consistency": 0.95,
+    "minimum_mean_p_own_gap": 0.05,
+    "minimum_target_coverage": 0.99
+  }
+}

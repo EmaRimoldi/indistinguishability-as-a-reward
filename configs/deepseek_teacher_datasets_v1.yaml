@@ -1,0 +1,43 @@
+project:
+  root: /home/erimoldi/projects/indistinguishability-as-a-reward
+
+paths:
+  output_root: data/distillation/deepseek_v4_flash_v1
+  openrouter_env: models/openrouter/.env
+
+model:
+  model_id: deepseek/deepseek-v4-flash
+  expected_provider: DigitalOcean
+  temperature: 0
+  top_p: 1.0
+  provider_routing:
+    order: [DigitalOcean]
+    require_parameters: true
+    allow_fallbacks: false
+
+transport:
+  max_attempts: 12
+  max_retry_wait_seconds: 120
+  logical_max_attempts: 5
+  logical_retry_wait_seconds: 15
+  inter_request_delay_seconds: 1.0
+
+domains:
+  mbpp:
+    expected_count: 500
+    source_file: experiments/mbpp_deepseek_v1/training/primary/grpo_primary_trial17_20260825T044857Z/train_examples.jsonl
+    dataset_id: google-research-datasets/mbpp
+    dataset_split: test
+    cache_dir: data/cache
+    max_tokens: 768
+    unit_test_timeout_seconds: 5
+
+  commonsenseqa:
+    expected_count: 1000
+    source_file: experiments/commonsenseqa_deepseek_v1/training/full/cqa_grpo_full_v1/cqa_grpo_full_seed23_20260826T111122Z/train_examples.jsonl
+    max_tokens: 256
+
+  gsm8k:
+    expected_count: 1000
+    source_file: data/gsm8k/main_seed23/official_train.jsonl
+    max_tokens: 768

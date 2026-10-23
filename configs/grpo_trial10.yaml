@@ -1,0 +1,86 @@
+project:
+  name: indistinguishability-as-a-reward
+  root: /home/erimoldi/projects/indistinguishability-as-a-reward
+  seed: 17
+
+paths:
+  data_cache: data/cache
+  hf_cache: models/cache/huggingface
+  experiments: experiments
+  checkpoints: models/checkpoints
+  openrouter_env: models/openrouter/.env
+
+dataset:
+  phase0_config: configs/phase0.yaml
+  name: google-research-datasets/mbpp
+  split: train
+  selection: first
+
+trial:
+  run_name: grpo_indistinguishability_trial10
+  prompt_count: 10
+  expected_reward_calls: 40
+
+actor:
+  role: A
+  model_id: Qwen/Qwen2.5-1.5B-Instruct
+  local_files_only: true
+  lora:
+    r: 16
+    alpha: 32
+    dropout: 0.05
+    target_modules:
+      - q_proj
+      - k_proj
+      - v_proj
+      - o_proj
+      - gate_proj
+      - up_proj
+      - down_proj
+
+discriminator:
+  role: B
+  provider: openrouter
+  model_id: deepseek/deepseek-v4-flash
+  target_model_name: DeepSeek V4 Flash
+  judge_max_tokens: 1
+  temperature: 0
+  top_logprobs: 5
+  strict_logprobs: true
+  request_overrides:
+    reasoning:
+      enabled: false
+  provider_routing:
+    require_parameters: true
+    allow_fallbacks: false
+
+reward:
+  type: pointwise_self_attribution_logprob
+  value: p_own
+  max_reward_calls: 40
+  max_http_requests: 40
+  max_attempts_per_call: 1
+  max_concurrency: 4
+  timeout_seconds: 120
+
+training:
+  algorithm: GRPO
+  world_size: 1
+  num_generations: 4
+  generation_batch_size: 40
+  per_device_train_batch_size: 4
+  gradient_accumulation_steps: 1
+  max_steps: 10
+  max_prompt_tokens: 1024
+  max_completion_length: 768
+  temperature: 0.8
+  top_p: 0.95
+  learning_rate: 1.0e-6
+  warmup_ratio: 0.0
+  lr_scheduler_type: constant
+  gradient_checkpointing: true
+  mask_truncated_completions: true
+  beta: 0.0
+  loss_type: dr_grpo
+  scale_rewards: group
+  num_completions_to_print: 4

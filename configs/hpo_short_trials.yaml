@@ -1,0 +1,152 @@
+reference:
+  paper: https://arxiv.org/abs/2606.19336
+  code: https://github.com/SusanWYS/turing-rl
+  transferable_initialization:
+    learning_rate: 1.0e-5
+    beta: 1.0e-3
+    temperature: 0.6
+    top_p: 1.0
+    num_generations: 4
+    lora_r: 64
+    lora_alpha: 32
+    ppo_clip_ratio: 0.2
+    num_iterations: 1
+
+hpo_study_name: grpo_log_p_own_v1
+
+proposed_center:
+  learning_rate: 1.0e-5
+  beta: 1.0e-3
+  temperature: 0.6
+  top_p: 1.0
+  num_generations: 4
+  lora_r: 64
+  lora_alpha: 32
+  lora_rank_ablations: [16, 32]
+  ppo_clip_ratio: 0.2
+  num_iterations: 1
+  max_completion_length: 768
+  full_run_epochs: [2, 3]
+  deliberately_not_transferred:
+    - batch_size_128
+    - sft_warm_start
+    - target_response_length_penalty
+
+short_trial:
+  training_prompts: 100
+  validation_prompts: 90
+  evaluation_steps: [0, 50, 100]
+  fixed_seed: 17
+  confirmation_seeds: [17, 23, 42]
+
+search:
+  framework: optuna
+  sampler:
+    name: TPESampler
+    multivariate: true
+    seed: 17
+    startup_trials: 10
+  pruner:
+    name: MedianPruner
+    startup_trials: 8
+    warmup_steps: 50
+    interval_steps: 50
+  space:
+    learning_rate: [1.0e-6, 3.0e-6, 1.0e-5, 3.0e-5]
+    beta: [0.0, 1.0e-4, 1.0e-3, 3.0e-3]
+    temperature: [0.4, 0.6, 0.8]
+    lora_r: [16, 32, 64]
+    lora_alpha: [32]
+    lora_dropout: [0.0, 0.05]
+    scale_rewards: [group, batch]
+
+initial_trials:
+  - name: previous_pilot_initialization
+    learning_rate: 1.0e-6
+    beta: 0.0
+    temperature: 0.8
+    lora_r: 16
+    lora_dropout: 0.05
+    scale_rewards: group
+  - name: turing_rl_center
+    learning_rate: 1.0e-5
+    beta: 1.0e-3
+    temperature: 0.6
+    lora_r: 64
+    lora_dropout: 0.0
+    scale_rewards: group
+  - name: lower_learning_rate
+    learning_rate: 3.0e-6
+    beta: 1.0e-3
+    temperature: 0.6
+    lora_r: 64
+    lora_dropout: 0.0
+    scale_rewards: group
+  - name: higher_learning_rate
+    learning_rate: 3.0e-5
+    beta: 1.0e-3
+    temperature: 0.6
+    lora_r: 64
+    lora_dropout: 0.0
+    scale_rewards: group
+  - name: no_kl
+    learning_rate: 1.0e-5
+    beta: 0.0
+    temperature: 0.6
+    lora_r: 64
+    lora_dropout: 0.0
+    scale_rewards: group
+  - name: higher_kl
+    learning_rate: 1.0e-5
+    beta: 3.0e-3
+    temperature: 0.6
+    lora_r: 64
+    lora_dropout: 0.0
+    scale_rewards: group
+  - name: lower_temperature
+    learning_rate: 1.0e-5
+    beta: 1.0e-3
+    temperature: 0.4
+    lora_r: 64
+    lora_dropout: 0.0
+    scale_rewards: group
+  - name: higher_temperature
+    learning_rate: 1.0e-5
+    beta: 1.0e-3
+    temperature: 0.8
+    lora_r: 64
+    lora_dropout: 0.0
+    scale_rewards: group
+  - name: lower_lora_rank
+    learning_rate: 1.0e-5
+    beta: 1.0e-3
+    temperature: 0.6
+    lora_r: 16
+    lora_dropout: 0.0
+    scale_rewards: group
+  - name: batch_reward_scaling
+    learning_rate: 1.0e-5
+    beta: 1.0e-3
+    temperature: 0.6
+    lora_r: 64
+    lora_dropout: 0.0
+    scale_rewards: batch
+
+reward_construction:
+  value: log_p_own
+  formula: logp_1_minus_logsumexp_logp_0_logp_1
+  binary_label_mass: diagnostic_only
+  reporting_score: p_own
+
+selection:
+  direction: maximize
+  primary: paired_validation_reward_lcb
+  task_quality_constraint: pass_at_1_not_materially_worse
+  diagnostics:
+    - approximate_kl
+    - clip_ratio
+    - entropy
+    - gradient_norm
+    - truncation_rate
+    - completion_length
+    - within_group_reward_std

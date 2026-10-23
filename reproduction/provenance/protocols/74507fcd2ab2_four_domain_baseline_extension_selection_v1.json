@@ -1,0 +1,37 @@
+{
+  "campaign_id": "iar-four-domain-20260908-v2",
+  "checkpoint_policy": "terminal maximum global step only; no early stopping or intermediate checkpoint selection",
+  "excluded_arms": [
+    "step10_transfer_qwen35_397b_a17b",
+    "identity_qwen_judge"
+  ],
+  "extension_domains": [
+    "kodcode",
+    "spider"
+  ],
+  "ifbench": "DEFERRED",
+  "mbpp": "FORBIDDEN",
+  "new_training_arms": [
+    "sft_teacher",
+    "grpo_quality",
+    "grpo_oracle"
+  ],
+  "official_test_accessed": false,
+  "official_test_policy": "reuse the already frozen Step 12 test inputs only after all terminal training and validation artifacts complete",
+  "protocol": "campaign-four-domain-baseline-extension-v1",
+  "reused_existing_conditions": [
+    "a0",
+    "prompt_imitation",
+    "grpo_identity"
+  ],
+  "schema_version": 1,
+  "selected_domains": [
+    "commonsenseqa",
+    "gsm8k",
+    "kodcode",
+    "spider"
+  ],
+  "status": "complete",
+  "training_split": "frozen train_core1000 from Step 1 for each extension domain",
+  "validation_split": "frozen validation300 from Step 1 for each extension domain"
+}

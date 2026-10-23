@@ -1,0 +1,60 @@
+project:
+  root: /home/erimoldi/projects/indistinguishability-as-a-reward
+  seed: 23
+
+paths:
+  split_dir: data/commonsenseqa/cose_v1_11_seed23
+  hf_cache: models/cache/huggingface
+  openrouter_env: models/openrouter/.env
+
+actor:
+  model_id: Qwen/Qwen2.5-1.5B-Instruct
+  local_files_only: true
+  dtype: bfloat16
+  device_map: auto
+  baseline:
+    max_new_tokens: 256
+    temperature: 0.2
+    top_p: 0.95
+  probe:
+    num_generations: 4
+    max_new_tokens: 256
+    temperature: 0.6
+    top_p: 1.0
+
+discriminator:
+  model_id: deepseek/deepseek-v4-flash
+  target_model_name: DeepSeek V4 Flash
+  provider_routing:
+    order:
+      - DigitalOcean
+    require_parameters: true
+    allow_fallbacks: false
+  request_overrides:
+    reasoning:
+      enabled: false
+  own_generation:
+    max_tokens: 256
+    temperature: 0.2
+    top_p: 0.95
+  judgment:
+    max_tokens: 1
+    temperature: 0
+    logprobs: true
+    top_logprobs: 5
+    strict_logprobs: true
+  transport:
+    max_attempts: 12
+    max_retry_wait_seconds: 120
+    max_concurrency: 2
+    inter_request_delay_seconds: 1.0
+
+reward:
+  value: absolute_logp_1
+
+gates:
+  minimum_b_minus_a_accuracy: 0.05
+  minimum_attribution_auc: 0.70
+  minimum_groups_with_reward_variation: 80
+  minimum_correct_beats_incorrect_rate: 0.55
+  maximum_absolute_within_task_surface_correlation: 0.40

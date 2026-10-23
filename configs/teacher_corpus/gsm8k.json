@@ -1,0 +1,39 @@
+{
+  "baseline_protocol": "/path/to/runs/07_baseline_suite/configs/baseline_suite_protocol_v2.json",
+  "baseline_protocol_sha256": "0af375a69914ada24dde5a2ff0811518213077148179a22de3397d27badf30a6",
+  "campaign_id": "iar-four-domain-20260908-v2",
+  "domain": "gsm8k",
+  "domain_selection": "/path/to/runs/06_two_domain_selection/results/two_domain_selection_v1.json",
+  "domain_selection_sha256": "42ecf9bcc8a1257b13b0a781630fce34fb5b2aebf3e90a941d9000e4e0e24ef0",
+  "expected_count": 1000,
+  "expected_provider": "StreamLake",
+  "max_tokens": 768,
+  "model_id": "deepseek/deepseek-v4-flash",
+  "official_test_accessed": false,
+  "output_root": "/path/to/runs/07_baseline_suite/domains/gsm8k/sft_teacher",
+  "protocol": "campaign-step7-sft-teacher-v1",
+  "provider_routing": {
+    "allow_fallbacks": false,
+    "order": [
+      "StreamLake"
+    ],
+    "require_parameters": true
+  },
+  "request_overrides": {
+    "reasoning": {
+      "enabled": false
+    }
+  },
+  "schema_version": 1,
+  "step": 7,
+  "temperature": 0,
+  "top_p": 1.0,
+  "training_split": "/path/to/runs/01_data_protocol_runtime_gates/datasets/gsm8k/frozen_historical_seed23/official_train.jsonl",
+  "training_split_sha256": "ed030cdd749e339dc76c069457ad1212411647c7d9c1186956d62fb9e8f52cb2",
+  "transport": {
+    "max_attempts_per_call": 5,
+    "max_retry_wait_seconds": 120,
+    "minimum_request_interval_seconds": 1.0,
+    "timeout_seconds": 120
+  }
+}

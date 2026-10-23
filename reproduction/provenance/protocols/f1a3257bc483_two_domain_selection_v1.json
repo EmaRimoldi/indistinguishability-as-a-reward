@@ -1,0 +1,15 @@
+{
+  "checkpoint_selection": "maximum global step (2000); no early stopping or validation model selection",
+  "downstream_split_contract": "reuse frozen train_core1000 and validation300",
+  "official_test_accessed": false,
+  "protocol": "campaign-two-domain-selection-v1",
+  "selected_domains": [
+    "commonsenseqa",
+    "gsm8k"
+  ],
+  "status": "complete",
+  "tie_break": [
+    "higher final-checkpoint validation task utility",
+    "fixed pre-result order: gsm8k, kodcode, spider"
+  ]
+}

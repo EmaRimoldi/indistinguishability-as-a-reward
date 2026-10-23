@@ -1,0 +1,41 @@
+{
+  "baseline_protocol": "/path/to/runs/15_four_domain_baseline_extension/configs/baseline_suite_protocol_v2.json",
+  "baseline_protocol_sha256": "217c5cd5fe345a937ca2f63c6a1e569230651bf9cc9e25bf7f97f8330f09079e",
+  "campaign_id": "iar-four-domain-20260908-v2",
+  "domain": "spider",
+  "domain_selection": "/path/to/runs/15_four_domain_baseline_extension/configs/four_domain_baseline_extension_selection_v1.json",
+  "domain_selection_sha256": "74507fcd2ab21130bf0298ba0ed6bdc09d44d737ebeb3d38088c3ec843591e72",
+  "expected_count": 1000,
+  "expected_provider": "StreamLake",
+  "max_tokens": 768,
+  "model_id": "deepseek/deepseek-v4-flash",
+  "official_test_accessed": false,
+  "output_root": "/path/to/runs/15_four_domain_baseline_extension/domains/spider/sft_teacher",
+  "protocol": "campaign-step15-sft-teacher-v1",
+  "provider_routing": {
+    "allow_fallbacks": false,
+    "order": [
+      "StreamLake"
+    ],
+    "require_parameters": true
+  },
+  "request_overrides": {
+    "reasoning": {
+      "enabled": false
+    }
+  },
+  "schema_version": 1,
+  "spider_database_root": "/path/to/datasets/spider-release-1403EGqz/spider_data/database",
+  "spider_tables_json": "/path/to/datasets/spider-release-1403EGqz/spider_data/tables.json",
+  "step": 15,
+  "temperature": 0,
+  "top_p": 1.0,
+  "training_split": "/path/to/runs/01_data_protocol_runtime_gates/datasets/spider/frozen_seed23_v1/train_core1000.jsonl",
+  "training_split_sha256": "c0b978ebb22f6f094f74e5d281c7a39939f04181dbfdac9702f1acda72dbe909",
+  "transport": {
+    "max_attempts_per_call": 5,
+    "max_retry_wait_seconds": 120,
+    "minimum_request_interval_seconds": 1.0,
+    "timeout_seconds": 120
+  }
+}

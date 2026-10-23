@@ -1,0 +1,50 @@
+# Python and test caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+
+# Local environments and credentials
+.venv/
+.venv-*/
+.env
+.env.*
+!.env.example
+models/openrouter/*.env
+models/cache/
+models/checkpoints/
+
+# Raw datasets and generated run state
+data/cache/
+data/raw/
+data/processed/
+# Frozen paper splits are versioned; downloaded source datasets remain ignored.
+data/distillation/
+experiments/
+logs/
+output/
+tmp*/
+mechanistic_analysis/results/
+
+# Local work products
+.analysis_work/
+.codex*/
+remote_project/
+artifacts/
+
+# OS/editor files
+.DS_Store
+._*
+*.swp
+/runs/
+/cache/
+/external/
+/dist/
+.reproduction-paths.json
+keys/*.env
+
+# Experimental outputs are always local, including nested result folders.
+results/
+*.pdf
+*.png

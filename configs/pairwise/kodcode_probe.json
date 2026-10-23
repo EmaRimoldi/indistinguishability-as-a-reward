@@ -1,0 +1,39 @@
+{
+  "domain": "kodcode",
+  "gate_thresholds": {
+    "binary_label_mass_floor": 0.85,
+    "binary_label_mass_target": 0.9,
+    "bootstrap_replicates": 10000,
+    "complete_judge_call_coverage": 800,
+    "complete_logical_pair_coverage": 400,
+    "maximum_absolute_mean_order_effect": 0.1,
+    "maximum_ambiguous_requests": 0,
+    "maximum_mean_actor_probability": 0.95,
+    "minimum_actor_probability_standard_deviation": 0.03,
+    "minimum_emitted_argmax_consistency": 0.98,
+    "minimum_fraction_groups_with_range": 0.2,
+    "minimum_mean_actor_probability": 0.05,
+    "minimum_target_coverage": 0.95,
+    "minimum_within_group_range": 0.02
+  },
+  "generation_batch_size": 4,
+  "grpo_config": "/orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/tier3_pairwise_generate_distinguish/missing_domain_extension_seed23/domains/kodcode/configs/pairwise_probe_actor_config.yaml",
+  "grpo_config_sha256": "bda99f61b13cfcbb86050ee3c121be73c7c6d45eeda477dd07d8f5177fce3d1a",
+  "official_test_accessed": false,
+  "output_root": "/orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/tier3_pairwise_generate_distinguish/missing_domain_extension_seed23/domains/kodcode/probe",
+  "pairwise_protocol": "/orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/tier3_pairwise_generate_distinguish/configs/pairwise_protocol_v3_final_checkpoint_nested_probe.json",
+  "pairwise_protocol_sha256": "3f3a61c5ed2d41f0a799635fceb554ac7c6975d45394ae0801c51ebb24fbfa69",
+  "probe_split": "/orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/evaluation_audits_and_reproducibility/01_data_protocol_runtime_gates/datasets/kodcode/frozen_seed23_v1/probe100.jsonl",
+  "probe_split_sha256": "8f77711a9b1359fbfd619c3aa3308438c30b9dfb0f260a01a8751f1ddf88bded",
+  "protocol": "pairwise-missing-domain-probe100-v1",
+  "sampling_method": "prefix100_of_seed23_frozen_train_core1000",
+  "schema_version": 1,
+  "seed": 23,
+  "teacher_summary": "/orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/tier3_pairwise_generate_distinguish/missing_domain_extension_seed23/domains/kodcode/configs/teacher_summary_bound.json",
+  "transport": {
+    "max_attempts_per_call": 5,
+    "max_retry_wait_seconds": 120,
+    "minimum_request_interval_seconds": 1.0,
+    "timeout_seconds": 120
+  }
+}

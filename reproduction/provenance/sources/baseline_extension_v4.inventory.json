@@ -1,0 +1,15 @@
+{
+  "SOURCE_SNAPSHOT.json": "6b47e266f06e4d702c377b3345956d87ce9c9fb5ca26282233df7c5ab5144779",
+  "scripts/campaign_baseline_suite.py": "ee2ccdf1f11c74a11cbd941101e73615e77e8fc995315e3dd379afeaf0d426ef",
+  "scripts/campaign_final_test.py": "2d1fa64629f7128c4955dc9c74f292dab1ac6ba7864de44f5c889b03726c79d3",
+  "scripts/campaign_sft_baseline.py": "d019f59e26ce7066f0df1165f3cc5f4ecdd2d3a1f86c226d98c188a4c382f444",
+  "scripts/campaign_teacher_corpus.py": "d14c57b753a7ef300e1d58e9f8eeb73fe5b1c14f23ef47a2fac5058bf4624a85",
+  "scripts/prepare_campaign_baseline_suite.py": "cdf8d35a105f768bd0253d79959c8239f4f8d8be3219dde3263a0baf6d92d7a3",
+  "scripts/submit_campaign_baseline_suite.py": "6000564f0b778fa4b459a74e642eaab425cf385f9138c39ab11db4659ab84ddc",
+  "src/iar_campaign/__init__.py": "40496fcca640f5609685a3b319c11e79347d22aaa94071a4ea8ca474b7635a55",
+  "src/iar_campaign/baseline_evaluation.py": "a052da161427e709bb57741b080aabcb35e6520df00aeb22311ad23f5ca54472",
+  "src/iar_campaign/baseline_suite.py": "86bcd9a2eac88f22b3a13f64064a95fa27e903c6b21357a203d28402e4323c26",
+  "src/iar_campaign/final_test.py": "80280b9952d1f28366262db4c3e0a29e979f75c6addce69e37d34e0fb5f1cc3f",
+  "src/iar_campaign/sft_baseline.py": "14df1a2b6c71c030beab2364dae6bd0bb9205f53939d669ea1a1bb5c660a3c35",
+  "src/iar_campaign/teacher_corpus.py": "5a9c49948b786c143581eda07b4fd5a5df3002a025eab67e2f714c7a411d841d"
+}

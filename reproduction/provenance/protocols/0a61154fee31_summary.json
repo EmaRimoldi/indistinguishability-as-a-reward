@@ -1,0 +1,8 @@
+{
+  "domain": "kodcode",
+  "kodcode_scoring_protocol": "/orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/04_reward_transform_selection/results/kodcode_validation300_scoring_protocol_v1.json",
+  "kodcode_scoring_protocol_sha256": "32d14f51eaec06be00e0bfefb8d4f960dd90e6f768872393e53bbb62c22ac7f5",
+  "official_test_accessed": false,
+  "validation_file": "/orcd/pool/008/erimoldi/iar/experiments/campaign_20260908_v2/01_data_protocol_runtime_gates/datasets/kodcode/frozen_seed23_v1/validation300.jsonl",
+  "validation_file_sha256": "10e3f4ad6db85ba9fd1784657f0c5532cca9633050a6179ff1d56af08d0cfb4d"
+}
